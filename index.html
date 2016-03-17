@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Green Valley</title>
 </head>
 <body>
  
@@ -19,8 +19,11 @@
           <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
         </ul>
       </nav>
-      <div class="short-contacts"><a href="" class="short-contacts__phone">+7 812 777-55-88</a><span class="short-contacts__adddress">г.Санкт-Петербург, Приморское ш. 600</span></div>
-      <div class="page-header__btn">
+      <div class="short-contacts">
+        <a href="" class="short-contacts__phone">+7 812 777-55-88</a>
+        <span class="short-contacts__adddress">г.Санкт-Петербург, Приморское ш. 600</span>
+      </div>
+      <div class="page-header__btn-wrap">
         <a href="" class="btn  btn--icon-calendar">забронировать</a>
       </div>      
     </div>
@@ -51,7 +54,7 @@
     <div class="service-slider">
       <section class="service-slider__item  service-slider__item--active">
         <h1 class="service-slider__title">Здоровый отдых</h1>
-        <p class="descr">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлюками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
+        <p class="service-slider__descr">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлюками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
         <ul class="service-slider__list">
           <li class="service-slider__item">бассеин</li>
           <li class="service-slider__item">спортивная площадка</li>
@@ -77,59 +80,65 @@
     
   </div>
   
-  <div class="photo-slider">
-    <div class="photo-slider__item  photo-slider__item--active"><img src="" alt=""></div>
-    <div class="photo-slider__item"><img src="" alt=""></div>
-    <div class="photo-slider__item"><img src="" alt=""></div>
-    <div class="photo-slider__item"><img src="" alt=""></div>
-    <div class="photo-slider__item"><img src="" alt=""></div>
-    <div class="photo-slider__item"><img src="" alt=""></div>
-    <div class="photo-slider__item"><img src="" alt=""></div>
-    <div class="photo-slider__item"><img src="" alt=""></div>
+  <div class="gallery">
+    <div class="gallery__main-img"><img src="" alt=""></div>
+    <div class="gallery__thumb">
+      <img src="" alt="" class="gallery__thumb-item">
+      <img src="" alt="" class="gallery__thumb-item">
+      <img src="" alt="" class="gallery__thumb-item">
+      <img src="" alt="" class="gallery__thumb-item">
+      <img src="" alt="" class="gallery__thumb-item">
+      <img src="" alt="" class="gallery__thumb-item">
+      <img src="" alt="" class="gallery__thumb-item">
+    </div>    
   </div>   
   
   <section class="review">
     <div class="review__inner">
-      <h2 class="review__title">Отзывы</h2>
+      <h2 class="section-title  section-title--white">Отзывы</h2>
       
-      <div class="cards-slider">
+      <div class="review-slider">
               
-        <div class="cards-slider__item  cards-slider__item--active">
-          <section class="cards-slider__card">
-            <img src="" alt="" class="cards-slider__photo">
-            <strong class="cards-slider__name">Екатерина В.</strong>
-            <span class="cards-slider__social-icon  cards-slider__social-icon--vk"></span>
-            <p class="cards-slider__text">Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
-            <p class="cards-slider__date">Дата отдыха: 01.06.2015 - 08.06.2015</p>
+        <div class="review-slider__item  review-slider__item--active">
+          <section class="review-card">
+            <img src="" alt="" class="review-card__photo">
+            <strong class="review-card__name">Екатерина В.</strong>
+            <div class="review-card__social">
+              <a href="#" class="review-card__social-icon  review-card__social-icon--vk"></a>
+            </div>            
+            <p class="review-card__text">Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
+            <p class="review-card__date">Дата отдыха: 01.06.2015 - 08.06.2015</p>
           </section>
-          <section class="cards-slider__card">
-            <img src="" alt="" class="cards-slider__photo">
-            <strong class="cards-slider__name">Екатерина В.</strong>
-            <span class="cards-slider__social-icon  cards-slider__social-icon--fb"></span>
-            <p class="cards-slider__text">Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.</p>
-            <p class="cards-slider__date">Дата отдыха: 15.05.2015 - 20.05.2015</p>
-          </section>
-        </div>
-        
-        <div class="cards-slider__item">
-          <section class="cards-slider__card">
-            <img src="" alt="" class="cards-slider__photo">
-            <strong class="cards-slider__name"></strong>
-            <span class="cards-slider__social-icon  cards-slider__social-icon--vk"></span>
-            <p class="cards-slider__text"></p>
-            <p class="cards-slider__date"></p>
-          </section>
-          <section class="cards-slider__card">
-            <img src="" alt="" class="cards-slider__photo">
-            <strong class="cards-slider__name"></strong>
-            <span class="cards-slider__social-icon  cards-slider__social-icon--fb"></span>
-            <p class="cards-slider__text"></p>
-            <p class="cards-slider__date"></p>
+          <section class="review-card">
+            <img src="" alt="" class="review-card__photo">
+            <strong class="review-card__name">Екатерина В.</strong>
+            <div class="review-card__social">
+              <a href="#" class="review-card__social-icon  review-card__social-icon--fb"></a>
+            </div>            
+            <p class="review-card__text">Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.</p>
+            <p class="review-card__date">Дата отдыха: 15.05.2015 - 20.05.2015</p>
           </section>
         </div>
         
-        <span class="cards-slider__control  cards-slider__control--left"></span>
-        <span class="cards-slider__control  cards-slider__control--right"></span>
+        <div class="review-slider__item">
+          <section class="review-card">
+            <img src="" alt="" class="review-slider__photo">
+            <strong class="review-slider__name"></strong>
+            <span class="review-slider__social-icon  review-slider__social-icon--vk"></span>
+            <p class="review-slider__text"></p>
+            <p class="review-slider__date"></p>
+          </section>
+          <section class="review-card">
+            <img src="" alt="" class="review-slider__photo">
+            <strong class="review-slider__name"></strong>
+            <span class="review-slider__social-icon  review-slider__social-icon--fb"></span>
+            <p class="review-slider__text"></p>
+            <p class="review-slider__date"></p>
+          </section>
+        </div>
+        
+        <span class="review-slider__control  review-slider__control--left"></span>
+        <span class="review-slider__control  review-slider__control--right"></span>
         
       </div>
       
@@ -138,33 +147,34 @@
     </div>
   </section>
   
-  <section class="offers">
-    <div class="offers__inner">
-      <h2 class="offers__title">Акции и предложения</h2>
+  <section class="actions">
+    <div class="actions__inner">
+      <h2 class="section-title">Акции и предложения</h2>
     
-      <div class="info-slider">
-        <div class="info-slider__item  info-slider__item--active">
-          <div class="info-slider__inner">
-            <b class="info-slider__title">скидки в мае</b>
-            <p class="info-slider__text">Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10% !</p>
+      <div class="actions-slider">
+        <div class="actions-slider__item  actions-slider__item--active">
+          <div class="actions-slider__inner">
+            <b class="actions-slider__title">скидки в мае</b>
+            <p class="actions-slider__text">Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10% !</p>
           </div>
         </div>
-        <div class="info-slider__item">
-          <div class="info-slider__inner">
-            <b class="info-slider__title"></b>
-            <p class="info-slider__text"></p>
+        <div class="actions-slider__item">
+          <div class="actions-slider__inner">
+            <b class="actions-slider__title"></b>
+            <p class="actions-slider__text"></p>
           </div>
         </div>
-        <ul class="info-slider__indicator">
-          <li class="info-slider__indicator-item  info-slider__indicator-item--active"></li>
-          <li class="info-slider__indicator-item"></li>
+        <ul class="actions-slider__indicator">
+          <li class="actions-slider__indicator-item  actions-slider__indicator-item--active"></li>
+          <li class="actions-slider__indicator-item"></li>
         </ul>
       </div>
     </div>
   </section>
   
   <section class="transport">
-    <h2 class="transport__title">Как до нас добраться</h2>    
+   <div class="transport__inner">
+    <h2 class="section-title">Как до нас добраться</h2>    
     <div class="map"></div>
     
     <div class="transport__info">
@@ -179,23 +189,27 @@
         <p class="transport__text">Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы «Репино»</p>
       </section>
     </div>
-    
+    </div>
   </section>
   
   <section class="accommodation">
-    <h2 class="accommodation__title">Где вы хотите отдохнуть?</h2>
+    <h2 class="section-title  section-title--white">Где вы хотите отдохнуть?</h2>
     
     <div class="accommodation__inner">
-      <div class="ad-card">
-        <img src="" alt="" class="ad-card__photo">
-        <h3 class="ad-card__title">В отеле</h3>
-        <p class="ad-card__info">от <span>4000</span> руб./сутки</p>
-      </div>
-      <div class="ad-card">
-        <img src="" alt="" class="ad-card__photo">
-        <h3 class="ad-card__title">В коттедже</h3>
-        <p class="ad-card__info">от <span>6800</span> руб./сутки</p>
-      </div>
+      <a href="#">
+        <div class="accommodation-card">
+          <img src="" alt="" class="accommodation-card__photo">
+          <h3 class="accommodation-card__title">В отеле</h3>
+          <p class="accommodation-card__info">от <span>4000</span> руб./сутки</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="accommodation-card">
+          <img src="" alt="" class="accommodation-card__photo">
+          <h3 class="accommodation-card__title">В коттедже</h3>
+          <p class="accommodation-card__info">от <span>6800</span> руб./сутки</p>
+        </div>
+      </a>
     </div>
     
   </section>
@@ -203,14 +217,17 @@
     <div class="page-footer__inner">
       <p class="page-footer__address">г. Санкт-Петербург Приморское ш.600</p>
       <div class="logo-set">
-        <div class="logo-set__site-logo"></div>
+        <a class="logo-set__site-logo"><img src="" alt=""></a>
         <div class="logo-social">
           <a href="" class="logo-social__icon  logo-social__icon--vk"></a>
           <a href="" class="logo-social__icon  logo-social__icon-insta"></a>
           <a href="" class="logo-social__icon  logo-social__icon--fb"></a>
         </div>
       </div>
-      <p class="page-footer__contacts"><a class="page-footer__phone">+7 812 777-55-88</a> <a class="page-footer__email">info@greenvalley.ru</a></p>
+      <p class="page-footer__contacts">
+        <a class="page-footer__phone">+7 812 777-55-88</a> 
+        <a class="page-footer__email">info@greenvalley.ru</a>
+      </p>
     </div>
   </footer>
   
