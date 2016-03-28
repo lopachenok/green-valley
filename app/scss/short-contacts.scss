@@ -1,0 +1,28 @@
+.short-contacts {
+  display: none;
+  
+  @media(min-width: $large-breakpoint){    
+    display: inline-block;
+    margin-left: 98px;    
+  }
+  
+  &__phone{
+    @media(min-width: $large-breakpoint){ 
+      display: block;
+      color: #191919;
+      font: 700 18px / 18px PTSans;
+      text-decoration: none;
+      letter-spacing: $letter-spacing;
+    }
+  }
+  
+  &__address{
+    @media(min-width: $large-breakpoint){ 
+      display: block;
+      color: #191919;
+      font: 400 14px / 18px $font-family;
+      margin-top: 13px;
+    }
+  }
+  
+}

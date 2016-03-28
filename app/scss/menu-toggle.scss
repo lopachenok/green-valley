@@ -1,0 +1,32 @@
+.menu-toggler {
+  width: 29px;
+  height: 4px;
+  background-color: $orange-color;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 22px;
+  cursor: pointer; 
+  
+  @media(min-width: $large-breakpoint) {
+      display: none;
+  }
+  
+}
+
+.menu-toggler:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: $orange-color;
+  top: -8px;
+}
+
+.menu-toggler:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: $orange-color;
+  top: 8px;
+}

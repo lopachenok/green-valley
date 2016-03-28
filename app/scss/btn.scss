@@ -1,0 +1,24 @@
+.btn{
+  display: block;
+  height: 37px;
+  border-radius: 30px;
+  color: #ffffff;
+  font: 500 14px / 18px $font-family;
+  background-color: $orange-color;  
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 9px 0;
+  transition: background-color .2s ease;
+}
+.btn:hover{
+  background-color: $dark-orange-color;
+}
+
+.btn--icon-calendar{
+  background-image: url(../img/IC-Calendar.png);
+  background-repeat: no-repeat;
+  background-position: 20px 8px;
+  padding-left: 15px;
+}

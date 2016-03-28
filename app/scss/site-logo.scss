@@ -1,0 +1,12 @@
+.site-logo {
+  display: block;
+  width: 149px;
+  margin: 0 auto 22px;
+  padding-left: 49px;
+  
+  @media(min-width: $large-breakpoint) {
+    margin: 0 0 0 10px;
+    padding: 0;
+  }
+  
+}

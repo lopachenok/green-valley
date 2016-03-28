@@ -1,0 +1,47 @@
+@mixin container(){
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  
+  @media(min-width: $medium-breakpoint){    
+    
+    &{ 
+      
+    }
+    
+  }
+  
+  @media(min-width: $large-breakpoint){
+    
+    &{ 
+      width: 1180px;
+    }
+    
+  }
+}
+
+@mixin grid(){
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin grid-cell($col-count){
+  flex: 0 0 100% / $col-count;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.row{
+  @include grid();
+}
+
+.gr{
+  @include grid-cell(1);
+  
+  @media(min-width: 768px){
+    &{ @include grid-cell(2);}
+  }
+  
+  @media(min-width: 1200px){
+    &{ @include grid-cell(3);}
+  }
+}

@@ -1,0 +1,63 @@
+ .main-nav {
+   width: 100%;
+   
+   @media(min-width: $large-breakpoint) {
+         width: auto;
+         margin-left: 37px;
+     }
+   
+   &__list {
+     height: 0;
+     overflow-y: hidden;
+     margin: 0;
+     padding: 0;
+     transition: all .5s ease;
+     
+     @media(min-width: $large-breakpoint) {
+         height: auto;         
+         display: inline-block;         
+     }
+     
+   }
+   
+   &__list--open{
+     height: 250px;     
+   }
+   
+   &__item {
+     height: 50px;
+     display: inline-block;
+     text-align: center;
+     width: 100%;
+     border-top: 1px solid #ebebeb;
+     box-sizing: border-box;
+     
+     @media(min-width: $large-breakpoint) {
+         width: auto;
+         height: auto;
+         border-top: none;
+         margin-right: 12px;
+     }
+     
+   }
+   
+   &__item--active &__link {
+     color: $orange-color;
+   }
+   
+   &__link {
+     color: #191919;
+     font: 400 14px / 50px $font-family;
+     text-decoration: none;
+     text-transform: uppercase;
+     height: 100%;
+     width: 100%;
+     display: block;
+     
+     
+     @media(min-width: $large-breakpoint) {
+         line-height: 14px;
+     }
+   }
+   
+ }

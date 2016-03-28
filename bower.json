@@ -1,0 +1,21 @@
+{
+  "name": "green-valley",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Lopachenok <lopachenock@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lopachenok/green-valley",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}

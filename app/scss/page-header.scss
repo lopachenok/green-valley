@@ -1,0 +1,27 @@
+.page-header {
+  border-bottom: 1px solid #ebebeb;
+  
+  &__inner {
+    
+    @include grid();   
+    align-items: center;
+    padding-top: 15px;
+    
+    @media(min-width: $large-breakpoint){      
+        @include container();
+        height: 89px;
+        padding: 0;
+    }
+    
+  }  
+  &__btn-wrap {
+    display: none;
+    
+    @media(min-width: $large-breakpoint){ 
+      display: block;
+      width: 181px;
+      margin-left: 60px;
+    }
+  }
+ 
+}
