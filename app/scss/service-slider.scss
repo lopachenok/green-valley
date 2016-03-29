@@ -1,0 +1,129 @@
+.service-slider{
+  height: 362px;
+  
+  @media(min-width: $medium-breakpoint){
+    height: 533px;
+  }
+  
+  @media(min-width: $large-breakpoint){
+    height: 360px;
+  }
+  
+  &__item{
+    background: url(../img/service-bg.png) no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 42px 35px 0;
+    text-align: center;
+    transition: transform 0.6s ease;
+    
+    @media(min-width: $medium-breakpoint){
+      padding: 42px 83px 0;
+      background-size: 105% 75%;
+      background-position: top;
+    }
+    
+    @media(min-width: $large-breakpoint){
+      padding: 0 17.8%;
+      background-size: 75%;
+      background-position: center;
+    }
+    
+    &:first-child{
+      transform: translate3d(-100%, 0, 0);
+    }
+    &:last-child{
+      transform: translate3d(100%, -100%, 0); 
+    }
+    
+    &--active:first-child{
+      transform: translate3d(0, 0, 0);
+    }
+    &--active:last-child {
+      transform: translate3d(0, -100%, 0);
+    } 
+  }
+  
+  &__title{
+    color: #000000;
+    font: 26px $font-family-banner;
+    width: 144px;
+    margin: 0 auto;
+    
+    @media(min-width: $medium-breakpoint){
+      font-size: 30px;
+      width: auto;
+    }
+  }
+  
+  &__descr{
+    color: #000000;
+    font: 400 16px / 22px $font-family;
+    margin: 36px 0 0;
+    
+    @media(min-width: $large-breakpoint){
+      width: 580px;
+      margin: 40px auto;
+    }
+  }
+  
+  &__list{
+    display: none;
+    
+    @media(min-width: $medium-breakpoint){      
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 36px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+  }
+  
+  &__list-item{
+    @media(min-width: $medium-breakpoint){ 
+      flex-basis: 90px;
+      color: #191919;
+      font: 500 14px / 18px $font-family;
+      text-transform: uppercase;
+      margin: 0 27px 27px;
+      padding-top: 95px;
+    }
+    
+    &:first-child{
+      @media(min-width: $medium-breakpoint){ 
+        background: url(../img/swimming_pool.png) no-repeat;      
+      }
+    }
+    &:nth-child(2){
+      @media(min-width: $medium-breakpoint){ 
+        background: url(../img/galaxy-football-school.png) no-repeat; 
+      }
+    }
+    &:nth-child(3){
+      @media(min-width: $medium-breakpoint){ 
+        background: url(../img/pic.png) no-repeat;
+      }
+    }
+    &:nth-child(4){
+      @media(min-width: $medium-breakpoint){ 
+        background: url(../img/spa1.png) no-repeat;
+      }
+    }
+    &:nth-child(5){
+      @media(min-width: $medium-breakpoint){ 
+        background: url(../img/123.png) no-repeat;
+      }
+    }
+    &:last-child{
+      @media(min-width: $medium-breakpoint){ 
+        background: url(../img/animation.png) no-repeat;
+      }
+    }
+  }
+  
+  
+  
+}

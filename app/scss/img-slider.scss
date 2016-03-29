@@ -13,14 +13,6 @@
     padding-top: 20px;   
     transition: transform 0.6s ease;
     
-    @media(min-width: 453px){
-      background-position: center;
-    } 
-    
-    @media(min-width: $large-breakpoint){
-      padding-top: 90px;
-    }
-    
     &:first-child{
       transform: translate3d(-100%, 0, 0);
     }
@@ -34,6 +26,15 @@
     &--active:last-child {
       transform: translate3d(0, -100%, 0);
     } 
+      
+    @media(min-width: 453px){
+      background-position: center;
+    } 
+    
+    @media(min-width: $large-breakpoint){
+      padding-top: 90px;
+    }
+    
   }
   
   

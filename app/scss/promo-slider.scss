@@ -1,3 +1,50 @@
 .promo-slider{
   overflow-x: hidden;
+  
+  &__tabs{
+    margin: 16px 0 30px;
+    padding: 0;
+    text-align: center;
+    
+    @media(min-width: $large-breakpoint){
+      margin: 31px 0 58px;
+    }
+  }
+  
+  &__tabs-item{
+    display: inline-block;
+    margin-right: 16px;
+    
+    @media(min-width: $medium-breakpoint){
+      margin-right: 36px;
+    }
+    
+    &__tabs-item:last-child{
+      margin-right: 0;
+    }
+    
+    & a{
+      color: #838383;
+      font: 400 14px / 14px $font-family;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+    
+    &--active a{
+      color: $orange-color;
+      position: relative;
+    } 
+    
+    &--active a:before{
+      content: '';
+      position: absolute;
+      width: 30px;
+      border-bottom: 2px solid $orange-color;
+      bottom: -9px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+  }
 }

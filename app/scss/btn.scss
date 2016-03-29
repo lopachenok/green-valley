@@ -11,6 +11,8 @@
   box-sizing: border-box;
   padding: 9px 0;
   transition: background-color .2s ease;
+  border: none;
+  outline: none;
 }
 .btn:hover{
   background-color: $dark-orange-color;
