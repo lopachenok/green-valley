@@ -1,0 +1,35 @@
+.left{
+  animation: left $animation-time ease-in-out;
+}
+.right{
+  animation: right $animation-time ease-in-out;
+}
+.active-left{
+  animation: active-left $animation-time ease-in-out;
+}
+.active-right{
+  animation: active-right $animation-time ease-in-out;
+}
+
+@keyframes left{  
+  0% { transform: translate3d(100%, 0, 0); z-index: 0; } 
+  25% {transform: translate3d(0, 0, 0); z-index: 0;}  
+  100% { transform: translate3d(0, 0, 0); z-index: 0;}   
+}
+@keyframes right{  
+  0% { transform: translate3d(-100%, 0, 0);  z-index: 0; } 
+  25% {transform: translate3d(0, 0, 0); z-index: 0;}  
+  100% { transform: translate3d(0, 0, 0);  z-index: 0; }   
+}
+@keyframes active-left{  
+  0% { transform: translate3d(0, 0, 0); z-index: 0;}   
+  25% {transform: translate3d(-100%, 0, 0);  z-index: -1;}
+  26% {transform: translate3d(100%, 0, 0);  z-index: -1;}
+  100% { transform: translate3d(100%, 0, 0);  z-index: -1; }   
+}
+@keyframes active-right{  
+  0% { transform: translate3d(0, 0, 0); z-index: 0;}   
+  25% {transform: translate3d(100%, 0, 0);  z-index: -1;}  
+  100% { transform: translate3d(100%, 0, 0);  z-index: -1; }   
+}
+ 
