@@ -1,16 +1,5 @@
 $(document).ready(function(){
   
-  /*$(document).on('click', '.main-slider__control--right', function(e){
-    e.preventDefault();
-    clearInterval(slideLoop);
-    slideRight(); 
-  })
-  
-  $(document).on('click', '.main-slider__control--left', function(e){
-    e.preventDefault();
-    clearInterval(slideLoop);
-    slideLeft();    
-  })*/
   $('.gallery__slider').swipeleft(function(){
     slideRight();      
   })
@@ -54,11 +43,23 @@ $(document).ready(function(){
     prev.removeClass('active-right');  
   }
   
-  /*var slideLoop = setInterval(function(){
-    slideRight()
-  }, 5000)*/
-  
-  
+  /*$(document).on('click', '.gallery__thumb-item', function(){    
+    var index = $(this).index();
+    var centerIndex = $('.gallery__thumb-item--active').index();
+    console.log(centerIndex);
+    $('.gallery__thumb-item--active').removeClass('gallery__thumb-item--active');
+    $(this).addClass('gallery__thumb-item--active');
+    
+    if(index < centerIndex){
+      var offset = (100*(centerIndex - index))-50;
+      $('.gallery__thumb-item').css('transform', 'translateX('+offset+'%)');
+      console.log(offset)
+    }else if(index > centerIndex){
+      var offset = (100*(index - centerIndex))+50;
+      $('.gallery__thumb-item').css('transform', 'translateX(-'+offset+'%)');
+    }
+    
+  })*/
   
  
   

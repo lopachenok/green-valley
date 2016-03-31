@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans|PT+Serif&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
   <!-- endbower -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -123,7 +125,7 @@
         <img src="img/gallery7.jpg" alt="" class="gallery__thumb-item">
         <img src="img/gallery1.jpg" alt="" class="gallery__thumb-item">
         <img src="img/gallery2.jpg" alt="" class="gallery__thumb-item">
-        <img src="img/gallery3.jpg" alt="" class="gallery__thumb-item">
+        <img src="img/gallery3.jpg" alt="" class="gallery__thumb-item  gallery__thumb-item--active">
         <img src="img/gallery4.jpg" alt="" class="gallery__thumb-item">
         <img src="img/gallery5.jpg" alt="" class="gallery__thumb-item">
         <img src="img/gallery6.jpg" alt="" class="gallery__thumb-item">
@@ -137,17 +139,19 @@
         <div class="review-slider">
 
           <div class="review-slider__item  review-slider__item--active">
+           
             <div class="review-card">
-              <img src="" alt="" class="review-card__photo">
+              <img src="img/Pic2.png" alt="" class="review-card__photo">
               <strong class="review-card__name">Екатерина В.</strong>
               <div class="review-card__social">
                 <a href="#" class="review-card__social-icon  review-card__social-icon--vk"></a>
-              </div>
+              </div> 
               <p class="review-card__text">Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
               <p class="review-card__date">Дата отдыха: 01.06.2015 - 08.06.2015</p>
             </div>
+            
             <div class="review-card">
-              <img src="" alt="" class="review-card__photo">
+              <img src="img/Pic-review.png" alt="" class="review-card__photo"> 
               <strong class="review-card__name">Екатерина В.</strong>
               <div class="review-card__social">
                 <a href="#" class="review-card__social-icon  review-card__social-icon--fb"></a>
@@ -155,6 +159,7 @@
               <p class="review-card__text">Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.</p>
               <p class="review-card__date">Дата отдыха: 15.05.2015 - 20.05.2015</p>
             </div>
+            
           </div>
 
           <div class="review-slider__item">
@@ -179,7 +184,9 @@
 
         </div>
 
-        <button class="btn  btn--simple">все отзывы</button>
+        <div class="review__btn-wrap">
+          <button class="btn  btn--simple">все отзывы</button>
+        </div>
 
       </div>
     </section>
@@ -273,6 +280,7 @@
   </footer>
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
   <!-- endbower -->
   <script src="js/jquery.mobile.custom.min.js"></script>
   <script src="js/script.js"></script>

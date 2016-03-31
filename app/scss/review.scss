@@ -1,0 +1,15 @@
+.review{  
+  background: url(../img/bike-hire-family.png) no-repeat; 
+  background-size: cover;
+  
+  &__inner{
+    padding-top: 65px;
+    padding-bottom: 48px;
+    text-align: center;
+  }
+  
+  &__btn-wrap{
+    margin: 38px auto 0;
+    width: 146px;
+  }
+}

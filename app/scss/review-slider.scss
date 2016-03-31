@@ -1,0 +1,33 @@
+.review-slider{
+  position: relative;
+  
+  &__item{
+    display: none;
+    
+    &--active{
+      display: block;
+    }
+  }
+  
+  &__control{
+    @media (min-width: $large-breakpoint) {
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      border-right: 1px solid #fff;
+      border-top: 1px solid #fff;
+      top: 55%;
+      cursor: pointer;
+      
+      &--right{
+        transform: rotate(45deg);
+        right: 150px;
+      }
+      
+      &--left{
+        transform: rotate(-135deg);
+        left: 150px;
+      }
+    }
+  }
+}

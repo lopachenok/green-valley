@@ -1,0 +1,81 @@
+.review-card{
+  width: 100%;
+  background: #fff;
+  margin-top: 54px;
+  padding: 0 42px 25px;
+  box-sizing: border-box;
+  
+  &:last-child{
+    display: none;
+  }
+    
+  @media (min-width: $medium-breakpoint) {
+    width: 479px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &:last-child{
+      display: block;
+    }
+  }
+  
+  @media (min-width: $large-breakpoint) {
+    display: inline-block;
+    margin: 54px 10px 0;
+    
+    &:last-child{
+      display: inline-block;
+    }
+  }
+  
+  &__photo{
+    width: 82px;
+    height: 82px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-25px);
+  }
+  
+  &__name{
+    color: #191919;
+    font: 500 14px / 18px $font-family;
+    display: block;
+    margin: -10px;
+  }
+  
+  &__social{
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  &__social-icon{
+    height: 16px;
+    width: 22px;
+    display: inline-block;    
+    
+    &--vk{
+      background: url(../img/IC-VK.png) no-repeat; 
+      background-size: contain;
+    }
+    
+    &--fb{
+      background: url(../img/IC-fb.png) no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &__text{
+    color: #000000;
+    font: 400 16px / 22px $font-family;
+    margin: 16px 0 25px;
+  }
+  
+  &__date{
+    color: #191919;
+    font: 400 14px / 18px $font-family;
+    width: 144px;
+    margin: 0 auto;
+  }
+}

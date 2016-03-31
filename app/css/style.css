@@ -177,6 +177,7 @@ html, body {
   height: 37px;
   border-radius: 30px;
   color: #ffffff;
+  cursor: pointer;
   font: 500 14px/18px "Fira Sans";
   background-color: #ff7435;
   text-decoration: none;
@@ -187,7 +188,8 @@ html, body {
   -webkit-transition: background-color .2s ease;
   transition: background-color .2s ease;
   border: none;
-  outline: none; }
+  outline: none;
+  width: 100%; }
 
 .btn:hover {
   background-color: #e85715; }
@@ -197,6 +199,13 @@ html, body {
   background-repeat: no-repeat;
   background-position: 20px 8px;
   padding-left: 15px; }
+
+.btn--simple {
+  background: transparent;
+  border: 2px solid #fff; }
+
+.btn--simple:hover {
+  background: transparent; }
 
 .promo-slider {
   overflow-x: hidden; }
@@ -618,3 +627,111 @@ html, body {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     z-index: -1; } }
+
+.review {
+  background: url(../img/bike-hire-family.png) no-repeat;
+  background-size: cover; }
+  .review__inner {
+    padding-top: 65px;
+    padding-bottom: 48px;
+    text-align: center; }
+  .review__btn-wrap {
+    margin: 38px auto 0;
+    width: 146px; }
+
+.review-slider {
+  position: relative; }
+  .review-slider__item {
+    display: none; }
+    .review-slider__item--active {
+      display: block; }
+  @media (min-width: 1200px) {
+    .review-slider__control {
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      border-right: 1px solid #fff;
+      border-top: 1px solid #fff;
+      top: 55%;
+      cursor: pointer; }
+      .review-slider__control--right {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        right: 150px; }
+      .review-slider__control--left {
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        left: 150px; } }
+
+.review-card {
+  width: 100%;
+  background: #fff;
+  margin-top: 54px;
+  padding: 0 42px 25px;
+  box-sizing: border-box; }
+  .review-card:last-child {
+    display: none; }
+  @media (min-width: 768px) {
+    .review-card {
+      width: 479px;
+      margin-left: auto;
+      margin-right: auto; }
+      .review-card:last-child {
+        display: block; } }
+  @media (min-width: 1200px) {
+    .review-card {
+      display: inline-block;
+      margin: 54px 10px 0; }
+      .review-card:last-child {
+        display: inline-block; } }
+  .review-card__photo {
+    width: 82px;
+    height: 82px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    -webkit-transform: translateY(-25px);
+    -ms-transform: translateY(-25px);
+    transform: translateY(-25px); }
+  .review-card__name {
+    color: #191919;
+    font: 500 14px/18px "Fira Sans";
+    display: block;
+    margin: -10px; }
+  .review-card__social {
+    text-align: center;
+    margin-top: 20px; }
+  .review-card__social-icon {
+    height: 16px;
+    width: 22px;
+    display: inline-block; }
+    .review-card__social-icon--vk {
+      background: url(../img/IC-VK.png) no-repeat;
+      background-size: contain; }
+    .review-card__social-icon--fb {
+      background: url(../img/IC-fb.png) no-repeat;
+      background-size: contain; }
+  .review-card__text {
+    color: #000000;
+    font: 400 16px/22px "Fira Sans";
+    margin: 16px 0 25px; }
+  .review-card__date {
+    color: #191919;
+    font: 400 14px/18px "Fira Sans";
+    width: 144px;
+    margin: 0 auto; }
+
+.section-title {
+  color: #000000;
+  font: 26px "PT Serif";
+  margin: 0;
+  letter-spacing: 0.05em; }
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 30px; } }
+
+.section-title--white {
+  color: #ffffff; }

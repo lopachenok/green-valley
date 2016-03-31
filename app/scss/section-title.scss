@@ -1,0 +1,14 @@
+.section-title{
+  color: #000000;
+  font: 26px $font-family-banner;
+  margin: 0;
+  letter-spacing: $letter-spacing;
+  
+  @media(min-width: $medium-breakpoint) {
+    font-size: 30px;
+  }
+}
+
+.section-title--white{
+  color: #ffffff;
+}
