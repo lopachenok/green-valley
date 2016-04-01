@@ -5,5 +5,13 @@
     padding-top: 53px;
     text-align: center; 
     padding-bottom: 35px;
+    
+    @media (min-width: $medium-breakpoint) {
+      padding-bottom: 25px;
+    }
+    
+    @media (min-width: $large-breakpoint) {
+      padding-bottom: 50px;
+    }
   }
 }

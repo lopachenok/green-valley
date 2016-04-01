@@ -1,0 +1,89 @@
+.transport{
+  
+  &__inner{
+    @include container();
+    padding-top: 35px;
+    padding-bottom: 33px;
+    text-align: center;
+    
+    @media (min-width: $medium-breakpoint) {
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
+    
+    @media (min-width: $large-breakpoint) {
+      padding-top: 50px;
+      padding-bottom: 70px;
+    }
+  }
+  
+  &__info{
+    padding: 0 58px;
+    
+    @media (min-width: $large-breakpoint){
+      padding: 0;
+      width: 840px;
+      margin: 0 auto;
+    }
+  }
+  
+  &__card{
+    margin-top: 40px;
+    
+    @media (min-width: $medium-breakpoint) {
+      &:last-of-type{
+        margin: 30px auto 0;
+        width: 333px;
+      }
+    }
+    
+    @media (min-width: $large-breakpoint){
+      display: inline-block;
+      width: 412px;
+      vertical-align: top;
+      margin-right: 42px;
+      
+      &:last-of-type{
+        margin-top: 40px; 
+        margin-left: 42px;
+      }
+    }
+  }
+  
+  &__icon{
+    width: 58px;
+    height: 27px;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    
+    &--bus{
+      background: url(../img/icon-bus.png) no-repeat center; 
+    }
+    
+    &--train{
+      background: url(../img/train-icon.png) no-repeat center; 
+    }
+  }
+  
+  &__name{
+    color: #191919;
+    font: 500 14px / 24px $font-family;
+    margin-top: 10px;
+    text-transform: uppercase;   
+  }
+  
+  &__text{
+    color: #191919;
+    font: 400 16px / 22px $font-family;
+    margin: 17px 0 0;
+    
+    @media (min-width: $large-breakpoint) {
+      text-align: left;
+    }
+    
+    span{
+      font-weight: bold;
+    }
+  }
+}

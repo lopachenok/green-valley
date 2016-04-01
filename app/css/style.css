@@ -759,7 +759,7 @@ html, body {
   font: 26px "PT Serif";
   margin: 0 auto;
   letter-spacing: 0.05em;
-  width: 224px; }
+  width: 150px; }
   @media (min-width: 768px) {
     .section-title {
       font-size: 30px;
@@ -778,6 +778,12 @@ html, body {
   @media (min-width: 1200px) {
     .actions__inner {
       width: 1180px; } }
+  @media (min-width: 768px) {
+    .actions__inner {
+      padding-bottom: 25px; } }
+  @media (min-width: 1200px) {
+    .actions__inner {
+      padding-bottom: 50px; } }
 
 .actions-slider {
   width: 100%;
@@ -849,3 +855,86 @@ html, body {
     cursor: pointer; }
     .actions-slider__indicator-item--active {
       background: #ff7435; }
+
+.transport__inner {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-bottom: 33px;
+  text-align: center; }
+  @media (min-width: 1200px) {
+    .transport__inner {
+      width: 1180px; } }
+  @media (min-width: 768px) {
+    .transport__inner {
+      padding-top: 25px;
+      padding-bottom: 50px; } }
+  @media (min-width: 1200px) {
+    .transport__inner {
+      padding-top: 50px;
+      padding-bottom: 70px; } }
+
+.transport__info {
+  padding: 0 58px; }
+  @media (min-width: 1200px) {
+    .transport__info {
+      padding: 0;
+      width: 840px;
+      margin: 0 auto; } }
+
+.transport__card {
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    .transport__card:last-of-type {
+      margin: 30px auto 0;
+      width: 333px; } }
+  @media (min-width: 1200px) {
+    .transport__card {
+      display: inline-block;
+      width: 412px;
+      vertical-align: top;
+      margin-right: 42px; }
+      .transport__card:last-of-type {
+        margin-top: 40px;
+        margin-left: 42px; } }
+
+.transport__icon {
+  width: 58px;
+  height: 27px;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid; }
+  .transport__icon--bus {
+    background: url(../img/icon-bus.png) no-repeat center; }
+  .transport__icon--train {
+    background: url(../img/train-icon.png) no-repeat center; }
+
+.transport__name {
+  color: #191919;
+  font: 500 14px/24px "Fira Sans";
+  margin-top: 10px;
+  text-transform: uppercase; }
+
+.transport__text {
+  color: #191919;
+  font: 400 16px/22px "Fira Sans";
+  margin: 17px 0 0; }
+  @media (min-width: 1200px) {
+    .transport__text {
+      text-align: left; } }
+  .transport__text span {
+    font-weight: bold; }
+
+.map {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  height: 400px;
+  margin-top: 35px; }
+  @media (min-width: 1200px) {
+    .map {
+      width: 1180px; } }
+  @media (min-width: 1200px) {
+    .map {
+      margin-top: 40px; } }

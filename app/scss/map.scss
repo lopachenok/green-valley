@@ -1,0 +1,9 @@
+.map{
+  @include container();
+  height: 400px;
+  margin-top: 35px;
+  
+  @media (min-width: $large-breakpoint) {
+      margin-top: 40px;
+    }
+}

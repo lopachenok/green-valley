@@ -255,19 +255,22 @@
     <section class="transport">
       <div class="transport__inner">
         <h2 class="section-title">Как до нас добраться</h2>
-        <div class="map"></div>
+        <div class="map" id="map"></div>
 
         <div class="transport__info">
+         
           <section class="transport__card">
-            <span class="transport__icon  transport__icon-bus"></span>
+            <span class="transport__icon  transport__icon--bus"></span>
             <h1 class="transport__name">автобусы</h1>
-            <p class="transport__text">№211 от станции метро «Черная речка» до остановки «Санаторий Репино» №305К от станции метро «Старая деревня» №680К от станции метро «Проспект Просвещения» №400К от станции метро «Площадь Ленина»</p>
+            <p class="transport__text"><span>№211</span> от станции метро «Черная речка» до остановки «Санаторий Репино» <span><br>№305К</span> от станции метро «Старая деревня» <span><br>№680К</span> от станции метро «Проспект Просвещения» <span><br>№400К</span> от станции метро «Площадь Ленина»</p>
           </section>
+          
           <section class="transport__card">
-            <span class="transport__icon">электропоезд</span>
-            <h1 class="transport__name  transport__icon--train"></h1>
+            <span class="transport__icon transport__icon--train"></span>
+            <h1 class="transport__name">электропоезд</h1>
             <p class="transport__text">Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы «Репино»</p>
           </section>
+          
         </div>
       </div>
     </section>
@@ -319,8 +322,29 @@
   <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
   <!-- endbower -->
   <script src="js/jquery.mobile.custom.min.js"></script>
+  
   <script src="js/script.js"></script>
   <script src="js/gallery-slider.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script>    
+    initMap();
+    function initMap() {
+      var mapDiv = document.getElementById('map');
+      var isDraggable = $(document).width() > 940 ? true : false;
+      var map = new google.maps.Map(mapDiv, {
+        center: {lat: 60.192157, lng: 29.639928},
+        zoom: 15,
+        scrollwheel: false,
+        draggable: isDraggable
+      });
+      
+      var marker = new google.maps.Marker({
+	     position: {lat: 60.192157, lng: 29.639928},
+	     map: map,
+         icon: 'img/map-icon.png' 
+       });
+    }
+  </script>
 </body>
 
 </html>
