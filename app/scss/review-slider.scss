@@ -1,11 +1,28 @@
 .review-slider{
   position: relative;
   
-  &__item{
-    display: none;
+  &__inner{
+    display: flex;    
+    overflow: hidden;
+    margin: 0 auto;
     
-    &--active{
-      display: block;
+    @media (min-width: $medium-breakpoint) {
+      width: 479px;
+    }
+    
+    @media (min-width: $large-breakpoint) {
+      width: 998px;
+    }
+    
+  }
+  
+  &__item{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    
+    @media (min-width: $large-breakpoint) {
+      flex-direction: row;
     }
   }
   
@@ -21,12 +38,12 @@
       
       &--right{
         transform: rotate(45deg);
-        right: 150px;
+        right: 11%;
       }
       
       &--left{
         transform: rotate(-135deg);
-        left: 150px;
+        left: 11%;
       }
     }
   }
