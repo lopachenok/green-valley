@@ -1,0 +1,9 @@
+.actions{
+  
+  &__inner{
+    @include container();    
+    padding-top: 53px;
+    text-align: center; 
+    padding-bottom: 35px;
+  }
+}

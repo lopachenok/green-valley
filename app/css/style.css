@@ -757,11 +757,95 @@ html, body {
 .section-title {
   color: #000000;
   font: 26px "PT Serif";
-  margin: 0;
-  letter-spacing: 0.05em; }
+  margin: 0 auto;
+  letter-spacing: 0.05em;
+  width: 224px; }
   @media (min-width: 768px) {
     .section-title {
-      font-size: 30px; } }
+      font-size: 30px;
+      width: auto; } }
 
 .section-title--white {
   color: #ffffff; }
+
+.actions__inner {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 53px;
+  text-align: center;
+  padding-bottom: 35px; }
+  @media (min-width: 1200px) {
+    .actions__inner {
+      width: 1180px; } }
+
+.actions-slider {
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+  position: relative; }
+  @media (min-width: 1200px) {
+    .actions-slider {
+      height: 420px; } }
+  .actions-slider__item {
+    background: url(../img/weeretewrt.png) no-repeat center;
+    background-size: cover;
+    height: 296px;
+    margin-top: 35px;
+    position: relative;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out; }
+    @media (min-width: 1200px) {
+      .actions-slider__item {
+        height: 336px; } }
+    .actions-slider__item:first-of-type {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0); }
+    .actions-slider__item:last-of-type {
+      -webkit-transform: translate3d(100%, -100%, 0);
+      transform: translate3d(100%, -100%, 0); }
+    .actions-slider__item--active:first-of-type {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+    .actions-slider__item--active:last-of-type {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0); }
+  .actions-slider__inner {
+    width: 296px;
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: left;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    left: 0px; }
+  .actions-slider__title {
+    color: #ff7435;
+    font: 500 18px/24px "Fira Sans";
+    text-transform: uppercase; }
+  .actions-slider__text {
+    color: #191919;
+    font: 400 16px/20px "Fira Sans";
+    margin: 0; }
+  .actions-slider__indicator {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .actions-slider__indicator-item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #ff7435;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer; }
+    .actions-slider__indicator-item--active {
+      background: #ff7435; }

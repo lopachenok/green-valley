@@ -1,0 +1,84 @@
+.actions-slider{
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+  
+  @media (min-width: $large-breakpoint) {
+      height: 420px;
+    }
+  
+  &__item{    
+    background: url(../img/weeretewrt.png) no-repeat center;
+    background-size: cover;
+    height: 296px;
+    margin-top: 35px;
+    position: relative;
+    transition: transform .4s ease-in-out;
+    
+    @media (min-width: $large-breakpoint) {
+      height: 336px;
+    }
+    
+    &:first-of-type{
+      transform: translate3d(-100%, 0, 0);
+    }
+    &:last-of-type{
+      transform: translate3d(100%, -100%, 0); 
+    }
+    
+    &--active:first-of-type{
+      transform: translate3d(0, 0, 0);
+    }
+    &--active:last-of-type {
+      transform: translate3d(0, -100%, 0);
+    } 
+  }
+  
+  &__inner{
+    width: 296px;
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: left;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+  }
+  
+  &__title{
+    color: $orange-color;
+    font: 500 18px / 24px $font-family;
+    text-transform: uppercase;
+  }
+  
+  &__text{
+    color: #191919;
+    font: 400 16px / 20px $font-family;
+    margin: 0;
+  }
+  
+  &__indicator{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  &__indicator-item{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid $orange-color;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    
+    &--active{
+      background: $orange-color;
+    }
+  }
+}
