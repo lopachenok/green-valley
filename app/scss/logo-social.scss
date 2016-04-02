@@ -1,0 +1,31 @@
+.logo-social{
+  height: 20px;
+  width: 147px;
+  margin: 10px 0 0;
+  
+  &__icon{
+    width: 25px;
+    margin-right: 32px;
+    display: inline-block;
+    height: 100%;
+    
+    &:last-of-type{
+      margin-right: 0;
+    }
+    
+    &--vk{
+      background: url(../img/IC-Social.png) no-repeat 0px center;
+      background-size: cover;
+    }
+    
+    &--insta{
+      background: url(../img/IC-Social.png) no-repeat -58px 0px;
+      background-size: cover;
+    }
+    
+    &--fb{
+      background: url(../img/IC-Social.png) no-repeat -120px 0px;
+      background-size: cover;
+    }
+  }
+}

@@ -144,7 +144,7 @@
 
               <div class="review-card">
                 <img src="img/Pic2.png" alt="" class="review-card__photo">
-                <strong class="review-card__name">Екатерина В.</strong>
+                <strong class="review-card__name">Екатерина В.1</strong>
                 <div class="review-card__social">
                   <a href="#" class="review-card__social-icon  review-card__social-icon--vk"></a>
                 </div>
@@ -168,7 +168,7 @@
 
               <div class="review-card">
                 <img src="img/Pic2.png" alt="" class="review-card__photo">
-                <strong class="review-card__name">Екатерина В.</strong>
+                <strong class="review-card__name">Екатерина В.2</strong>
                 <div class="review-card__social">
                   <a href="#" class="review-card__social-icon  review-card__social-icon--vk"></a>
                 </div>
@@ -192,7 +192,7 @@
 
               <div class="review-card">
                 <img src="img/Pic2.png" alt="" class="review-card__photo">
-                <strong class="review-card__name">Екатерина В.</strong>
+                <strong class="review-card__name">Екатерина В.3</strong>
                 <div class="review-card__social">
                   <a href="#" class="review-card__social-icon  review-card__social-icon--vk"></a>
                 </div>
@@ -231,21 +231,21 @@
         <h2 class="section-title">Акции и предложения</h2>
 
         <div class="actions-slider">
-          <div class="actions-slider__item  actions-slider__item--active">
+          <div class="actions-slider__item  actions-slider__item--active" id="action-slide1">
             <div class="actions-slider__inner">
               <b class="actions-slider__title">скидки в мае</b>
               <p class="actions-slider__text">Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10% !</p>
             </div>
           </div>
-          <div class="actions-slider__item">
+          <div class="actions-slider__item" id="action-slide2">
             <div class="actions-slider__inner">
               <b class="actions-slider__title"></b>
               <p class="actions-slider__text"></p>
             </div>
           </div>
           <ul class="actions-slider__indicator">
-            <li class="actions-slider__indicator-item  actions-slider__indicator-item--active"></li>
-            <li class="actions-slider__indicator-item"></li>
+            <li class="actions-slider__indicator-item  actions-slider__indicator-item--active" data-slide="action-slide1"></li>
+            <li class="actions-slider__indicator-item" data-slide="action-slide2"></li>
           </ul>
         </div>
         
@@ -275,22 +275,22 @@
       </div>
     </section>
 
-    <section class="accommodation">
+    <section class="accomodation">
       <h2 class="section-title  section-title--white">Где вы хотите отдохнуть?</h2>
 
-      <div class="accommodation__inner">
-        <a href="#" class="accommodation__item">
-          <div class="accommodation-card">
-            <img src="" alt="" class="accommodation-card__photo">
-            <h3 class="accommodation-card__title">В отеле</h3>
+      <div class="accomodation__inner">
+        <a href="#" class="accomodation__item">
+          <div class="accomodation-card">
+            <img src="img/ac-card1.png" alt="" class="accomodation-card__photo">
+            <h3 class="accomodation-card__title">В отеле</h3>
             <p class="room-cost">от <span class="room-cost__number">4000</span> руб./сутки</p>
           </div>
         </a>
 
-        <a href="#" class="accommodation__item">
-          <div class="accommodation-card">
-            <img src="" alt="" class="accommodation-card__photo">
-            <h3 class="accommodation-card__title">В коттедже</h3>
+        <a href="#" class="accomodation__item">
+          <div class="accomodation-card">
+            <img src="img/ac-card2.png" alt="" class="accomodation-card__photo">
+            <h3 class="accomodation-card__title">В коттедже</h3>
             <p class="room-cost">от <span class="room-cost__number">6800</span> руб./сутки</p>
           </div>
         </a>
@@ -304,10 +304,10 @@
     <div class="page-footer__inner">
       <p class="page-footer__address">г. Санкт-Петербург Приморское ш.600</p>
       <div class="logo-set">
-        <a class="logo-set__site-logo"><img src="" alt=""></a>
+        <a class="logo-set__site-logo"><img src="img/main-logo.png" alt=""></a>
         <div class="logo-social">
           <a href="" class="logo-social__icon  logo-social__icon--vk"></a>
-          <a href="" class="logo-social__icon  logo-social__icon-insta"></a>
+          <a href="" class="logo-social__icon  logo-social__icon--insta"></a>
           <a href="" class="logo-social__icon  logo-social__icon--fb"></a>
         </div>
       </div>
@@ -317,14 +317,17 @@
       </p>
     </div>
   </footer>
+  
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
   <!-- endbower -->
   <script src="js/jquery.mobile.custom.min.js"></script>
   
-  <script src="js/script.js"></script>
+  <script src="js/promo-slider.js"></script>
   <script src="js/gallery-slider.js"></script>
+  <script src="js/review.js"></script>
+  <script src="js/actions-slider.js"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <script>    
     initMap();

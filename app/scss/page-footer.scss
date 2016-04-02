@@ -1,0 +1,45 @@
+.page-footer{
+    
+  &__inner{
+    @include container();
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @media (min-width: $medium-breakpoint) {
+      padding-left: 20px;
+      padding-right: 20px;
+      justify-content: space-between;
+    }
+    
+    @media (min-width: $large-breakpoint) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  &__address{
+    display: none;
+    
+    @media (min-width: $medium-breakpoint) {
+      display: block;
+      width: 135px;
+      color: #191919;
+      font: 400 14px / 18px $font-family;
+      margin: 0;
+    }
+  }
+  
+  &__contacts{
+    display: none;
+    
+    @media (min-width: $medium-breakpoint) {
+      display: block;
+      width: 140px;
+      color: #191919;
+      font: 400 14px / 18px $font-family;
+      margin: 0;
+    }
+  }
+}

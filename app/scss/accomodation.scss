@@ -1,0 +1,28 @@
+.accomodation{
+  background: url(../img/accomodation-bg.png) no-repeat; 
+  background-size: cover; 
+  padding-top: 48px;
+  padding-bottom: 50px;
+  
+  &__inner{
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  &__item{
+    width: 278px;
+    display: block;
+    margin: 20px auto 0;
+    text-decoration: none;   
+    
+    @media (min-width: $medium-breakpoint) {
+      margin: 35px 10px 0;
+      width: 353px;
+      display: inline-block;
+    }
+    
+    @media (min-width: $large-breakpoint) {
+      width: 379px;
+    }
+  }
+}

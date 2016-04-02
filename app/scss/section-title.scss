@@ -3,7 +3,8 @@
   font: 26px $font-family-banner;
   margin: 0 auto;
   letter-spacing: $letter-spacing;
-  width: 150px;
+  width: 185px;
+  text-align: center;
   
   @media(min-width: $medium-breakpoint) {
     font-size: 30px;
