@@ -1,0 +1,39 @@
+.promo-banner{
+  height: 200px; 
+  background: url(../img/2.png) center;
+  background-size: cover;
+  
+  &__inner{
+    @include container();
+    padding-top: 55px;
+    
+    @media (min-width: $medium-breakpoint) {
+      padding-top: 40px;
+    }
+  }
+  
+  &__title{
+    color: #ffffff;
+    font: 30px / 42px $font-family-banner;
+    margin: 0 auto;
+    width: 259px;
+    text-align: center;
+    
+    @media (min-width: $medium-breakpoint) {
+      width: auto;
+    }
+  }
+  
+  &__text{
+    display: none;
+    
+    @media (min-width: $medium-breakpoint) {
+      color: #ffffff;
+      font: 400 18px / 24px $font-family;
+      margin: 37px auto 0;
+      display: block;
+      text-align: center;
+      width: 568px;
+    }
+  }
+}

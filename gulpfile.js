@@ -4,9 +4,11 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     useref = require('gulp-useref'),
     sass = require('gulp-sass'),
+    minifyCss = require('gulp-minify-css'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
-    wiredep = require('gulp-wiredep');
+    wiredep = require('gulp-wiredep'),
+    inject = require('gulp-inject');
 
 gulp.task('css', function() {
     gulp.src('app/scss/style.scss') 
@@ -19,12 +21,20 @@ gulp.task('css', function() {
 });
 
 gulp.task('bower', function () {
-  gulp.src('app/index.html')
+  gulp.src('app/**//*.html')
     .pipe(wiredep({
       optional: 'configuration',
       goes: 'here'
     }))
     .pipe(gulp.dest('./app/'));
+});
+
+gulp.task('inject', function () {
+  var target = gulp.src('./app/index.html');  
+  var sources = gulp.src(['./app/js/*.js', './app/css/*.css'], {read: false});
+ 
+  return target.pipe(inject(sources))
+    .pipe(gulp.dest(''));
 });
 
 gulp.task('html', function () {

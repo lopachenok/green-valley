@@ -207,8 +207,31 @@ html, body {
 .btn--simple:hover {
   background: transparent; }
 
+.btn--href {
+  border-bottom: 1px dashed #191919;
+  background: transparent;
+  color: #191919;
+  width: 83px;
+  border-radius: 0;
+  height: 18px;
+  margin: 25px auto 0;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .btn--href {
+      display: inline-block;
+      margin-left: 65px;
+      margin-top: 0; } }
+
+.btn--href:hover {
+  background: transparent; }
+
+@media (min-width: 768px) {
+  .btn--inline {
+    display: inline-block;
+    width: 181px; } }
+
 .promo-slider {
-  overflow-x: hidden; }
+  overflow: hidden; }
   .promo-slider__tabs {
     margin: 16px 0 30px;
     padding: 0;
@@ -999,58 +1022,58 @@ html, body {
     color: #ff7435;
     font-weight: bold; }
 
-.page-footer__inner {
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 25px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  @media (min-width: 1200px) {
-    .page-footer__inner {
-      width: 1180px; } }
-  @media (min-width: 768px) {
-    .page-footer__inner {
-      padding-left: 20px;
-      padding-right: 20px;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between; } }
-  @media (min-width: 1200px) {
-    .page-footer__inner {
-      padding-left: 0;
-      padding-right: 0; } }
-
-.page-footer__address {
-  display: none; }
-  @media (min-width: 768px) {
-    .page-footer__address {
-      display: block;
-      width: 135px;
-      color: #191919;
-      font: 400 14px/18px "Fira Sans";
-      margin: 0; } }
-
-.page-footer__contacts {
-  display: none; }
-  @media (min-width: 768px) {
-    .page-footer__contacts {
-      display: block;
-      width: 140px;
-      color: #191919;
-      font: 400 14px/18px "Fira Sans";
-      margin: 0; } }
+.page-footer {
+  border-top: 1px solid #ebebeb; }
+  .page-footer__inner {
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (min-width: 1200px) {
+      .page-footer__inner {
+        width: 1180px; } }
+    @media (min-width: 768px) {
+      .page-footer__inner {
+        padding-left: 20px;
+        padding-right: 20px;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+    @media (min-width: 1200px) {
+      .page-footer__inner {
+        padding-left: 0;
+        padding-right: 0; } }
+  .page-footer__address {
+    display: none; }
+    @media (min-width: 768px) {
+      .page-footer__address {
+        display: block;
+        width: 135px;
+        color: #191919;
+        font: 400 14px/18px "Fira Sans";
+        margin: 0; } }
+  .page-footer__contacts {
+    display: none; }
+    @media (min-width: 768px) {
+      .page-footer__contacts {
+        display: block;
+        width: 140px;
+        color: #191919;
+        font: 400 14px/18px "Fira Sans";
+        margin: 0; } }
 
 .logo-set__site-logo {
   width: 145px;
@@ -1077,3 +1100,115 @@ html, body {
     .logo-social__icon--fb {
       background: url(../img/IC-Social.png) no-repeat -120px 0px;
       background-size: cover; }
+
+.promo-banner {
+  height: 200px;
+  background: url(../img/2.png) center;
+  background-size: cover; }
+  .promo-banner__inner {
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 55px; }
+    @media (min-width: 1200px) {
+      .promo-banner__inner {
+        width: 1180px; } }
+    @media (min-width: 768px) {
+      .promo-banner__inner {
+        padding-top: 40px; } }
+  .promo-banner__title {
+    color: #ffffff;
+    font: 30px/42px "PT Serif";
+    margin: 0 auto;
+    width: 259px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .promo-banner__title {
+        width: auto; } }
+  .promo-banner__text {
+    display: none; }
+    @media (min-width: 768px) {
+      .promo-banner__text {
+        color: #ffffff;
+        font: 400 18px/24px "Fira Sans";
+        margin: 37px auto 0;
+        display: block;
+        text-align: center;
+        width: 568px; } }
+
+.room-list {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 46px;
+  padding-bottom: 48px; }
+  @media (min-width: 1200px) {
+    .room-list {
+      width: 1180px; } }
+  @media (min-width: 768px) {
+    .room-list {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (min-width: 1200px) {
+    .room-list {
+      padding: 40px 0 48px; } }
+
+.room-card {
+  margin-top: 50px;
+  background: #fafafa;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border: 1px solid #ebebeb; }
+  @media (min-width: 768px) {
+    .room-card {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+  @media (min-width: 1200px) {
+    .room-card {
+      padding-bottom: 50px; } }
+  .room-card__title {
+    color: #191919;
+    font: 400 26px/19px "PT Serif";
+    text-align: center;
+    margin: 0 0 10px; }
+    @media (min-width: 1200px) {
+      .room-card__title {
+        width: 598px; } }
+  @media (min-width: 1200px) {
+    .room-card .room-cost {
+      width: 598px; } }
+  .room-card__photo {
+    margin-top: 30px;
+    width: 360px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+    @media (min-width: 768px) {
+      .room-card__photo {
+        width: 580px;
+        height: 308px; } }
+    @media (min-width: 1200px) {
+      .room-card__photo {
+        float: right;
+        margin-top: -93px; } }
+  .room-card__text {
+    color: #191919;
+    font: 400 16px/21px "Fira Sans";
+    width: 277px;
+    margin: 35px auto 0; }
+    @media (min-width: 768px) {
+      .room-card__text {
+        width: 400px; } }
+    @media (min-width: 1200px) {
+      .room-card__text {
+        margin-left: 112px; } }
+  .room-card__btn-wrap {
+    width: 181px;
+    margin: 30px auto 0; }
+    @media (min-width: 768px) {
+      .room-card__btn-wrap {
+        width: 400px; } }
+    @media (min-width: 1200px) {
+      .room-card__btn-wrap {
+        margin-left: 112px; } }

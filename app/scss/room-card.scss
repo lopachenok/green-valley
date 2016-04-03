@@ -1,0 +1,82 @@
+.room-card{
+  margin-top: 50px;
+  background: #fafafa;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border: 1px solid #ebebeb;
+  
+  @media (min-width: $medium-breakpoint){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  @media (min-width: $large-breakpoint){
+    padding-bottom: 50px;
+  }
+  
+  &__title{
+    color: #191919;
+    font: 400 26px / 19px $font-family-banner;
+    text-align: center;
+    margin: 0 0 10px;
+    
+    @media (min-width: $large-breakpoint){
+      width: 598px;
+    }
+  }
+  
+  & .room-cost{
+    @media (min-width: $large-breakpoint){
+      width: 598px;
+    }
+  }
+  
+  &__photo{
+    margin-top: 30px;
+    width: 360px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+    @media (min-width: $medium-breakpoint){
+      width: 580px;
+      height: 308px;
+    }
+    
+    @media (min-width: $large-breakpoint){
+      float: right;
+      margin-top: -93px;
+    }
+  }
+  
+  &__text{
+    color: #191919;
+    font: 400 16px / 21px $font-family;
+    width: 277px;
+    margin: 35px auto 0;
+    
+    @media (min-width: $medium-breakpoint){
+      width: 400px;
+    }
+    
+    @media (min-width: $large-breakpoint){
+      margin-left: 112px;
+    }
+  }
+  
+  &__btn-wrap{
+    width: 181px;
+    margin: 30px auto 0;
+    
+    @media (min-width: $medium-breakpoint){      
+      width: 400px;
+    }
+    
+    @media (min-width: $large-breakpoint){
+      margin-left: 112px;
+    }
+  }
+  
+  
+}

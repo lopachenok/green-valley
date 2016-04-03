@@ -34,3 +34,31 @@
 .btn--simple:hover{
   background: transparent;
 }
+
+.btn--href{
+  border-bottom: 1px dashed #191919;
+  background: transparent;
+  color: #191919;
+  width: 83px;
+  border-radius: 0; 
+  height: 18px;
+  margin: 25px auto 0;
+  padding: 0;
+  
+  @media (min-width: $medium-breakpoint) {
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 0;
+  }  
+}
+
+.btn--href:hover{
+  background: transparent;
+}
+
+.btn--inline{
+  @media (min-width: $medium-breakpoint) {
+    display: inline-block;
+    width: 181px;
+  }  
+}
