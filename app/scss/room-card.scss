@@ -33,11 +33,16 @@
   
   &__photo{
     margin-top: 30px;
-    width: 360px;
+    width: 100%;
     height: 220px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    
+    @media (min-width: 500px){
+      width: 360px;
+     
+    }
     
     @media (min-width: $medium-breakpoint){
       width: 580px;

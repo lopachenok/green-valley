@@ -8,7 +8,24 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
     wiredep = require('gulp-wiredep'),
-    inject = require('gulp-inject');
+    inject = require('gulp-inject'),
+    browserSync = require("browser-sync"), 
+    reload = browserSync.reload;
+
+var config = {
+    server: {
+        baseDir: "./app"
+    },
+    tunnel: true,
+    host: 'localhost',
+    port: 9000,
+    injectChanges: true,
+    logPrefix: "App Front-End"
+};
+
+gulp.task('webserver', function () {
+    browserSync(config);
+});
 
 gulp.task('css', function() {
     gulp.src('app/scss/style.scss') 
