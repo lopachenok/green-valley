@@ -1,0 +1,98 @@
+.room{
+  
+  &__inner{
+    @include container();
+    padding-top: 45px;
+    padding-bottom: 50px;
+    
+    @media (min-width: $medium-breakpoint) {
+      padding-bottom: 95px;
+    }
+    
+    @media (min-width: $large-breakpoint) {
+      padding-bottom: 50px;
+    }
+  }
+  
+  &__title{
+    color: #000000;
+    font: 30px $font-family-banner;
+    text-align: center;
+    margin: 0 0 15px 0;
+  }
+  
+  &__descr{
+    padding: 0 20px;
+  }
+  
+  &__descr-title{
+    margin-top: 45px;
+    color: #191919;
+    font: 400 26px / 19px $font-family-banner;
+    
+    @media (min-width: $medium-breakpoint){
+      &:nth-of-type(2){
+        margin-top: 55px;
+      }
+    }
+  }
+  
+  &__descr-text{
+    margin-top: 20px;
+    color: #191919;
+    font: 400 16px / 22px $font-family;
+    
+    @media (min-width: $medium-breakpoint){
+      margin-top: 30px;
+    }
+  }
+  
+  &__list-wrap{
+    @media (min-width: $medium-breakpoint){
+      display: flex;
+    }
+  }
+  
+  &__descr-list{
+    color: #191919;
+    font: 400 16px / 22px $font-family;
+    padding-left: 20px;
+    list-style: none;
+    margin-top: 27px;
+    margin-bottom: 0;
+    
+    &--second{
+      margin-top: 0;
+      
+      @media (min-width: $medium-breakpoint){
+         margin-top: 27px;
+        margin-left: 88px;
+      }
+    }
+    
+    & li{
+      position: relative;
+    }
+    
+    & li:before{
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 5px;
+      border-bottom: 2px solid $orange-color;
+      border-right: 2px solid $orange-color;
+      left: -15px;
+      top: 6px;
+      transform: rotate(-45deg);
+    }
+  }  
+  
+  &__btn-wrap{
+    width: 181px;
+    margin: 45px auto 20px;
+    
+    @media (min-width: $large-breakpoint) {
+      margin-top: 95px;
+    }
+  }
+}
