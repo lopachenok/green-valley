@@ -4,26 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <title>Green Valley</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans|PT+Serif&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css css/main.css -->
+    
+    <link rel="stylesheet" href="css/style.css">  
+   
+  <!-- endbuild -->
 </head>
 
 <body>
 
   <header class="page-header">
     <div class="page-header__inner">
-      <a href="/" class="site-logo"><img src="" alt=""></a>
+      <a href="/" class="site-logo"><img src="img/main-logo.png" alt=""></a>
+      <a href="#" class="page-header__menu-toggler-wrap">
+        <div class="menu-toggler"></div>
+      </a>
       <nav class="main-nav">
-        <div class="main-nav__menu-toggler"></div>
+
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="" class="main-nav__link">Номера</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="" class="main-nav__link">Номера</a></li>
           <li class="main-nav__item"><a href="" class="main-nav__link">Коттедж</a></li>
           <li class="main-nav__item"><a href="" class="main-nav__link">Ресторан</a></li>
           <li class="main-nav__item"><a href="" class="main-nav__link">Отдых</a></li>
           <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
         </ul>
+
       </nav>
       <div class="short-contacts">
         <a href="" class="short-contacts__phone">+7 812 777-55-88</a>
-        <span class="short-contacts__adddress">г.Санкт-Петербург, Приморское ш. 600</span>
+        <span class="short-contacts__address">г.Санкт-Петербург, Приморское ш. 600</span>
       </div>
       <div class="page-header__btn-wrap">
         <a href="" class="btn  btn--icon-calendar">забронировать</a>
@@ -286,10 +301,10 @@
     <div class="page-footer__inner">
       <p class="page-footer__address">г. Санкт-Петербург Приморское ш.600</p>
       <div class="logo-set">
-        <a class="logo-set__site-logo"><img src="" alt=""></a>
+        <a class="logo-set__site-logo"><img src="img/main-logo.png" alt=""></a>
         <div class="logo-social">
           <a href="" class="logo-social__icon  logo-social__icon--vk"></a>
-          <a href="" class="logo-social__icon  logo-social__icon-insta"></a>
+          <a href="" class="logo-social__icon  logo-social__icon--insta"></a>
           <a href="" class="logo-social__icon  logo-social__icon--fb"></a>
         </div>
       </div>
@@ -299,7 +314,22 @@
       </p>
     </div>
   </footer>
-
+  <!-- build:js js/vendor.js -->
+   <script src="js/jquery.mobile.custom.min.js"></script>  
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js js/main.js -->
+  
+   
+    <script src="js/actions-slider.js"></script>  
+    <script src="js/gallery-slider.js"></script>  
+    
+    <script src="js/promo-slider.js"></script>  
+    <script src="js/review.js"></script>  
+   
+  <!-- endbuild -->
 </body>
 
 </html>

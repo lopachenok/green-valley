@@ -13,7 +13,7 @@
     
     @media (min-width: $large-breakpoint) {
       width: 998px;
-      height: 364px;
+      //height: 364px;
       position: relative;
       
       &--show-all{
@@ -44,9 +44,10 @@
       &:not(:first-of-type) {
         display: flex;
       }
-      
+       
       &--active{
         transform: translate3d(0, 0, 0);
+        position: static;
       }
       
       &--show-all{

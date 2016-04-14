@@ -5,16 +5,25 @@
   <title>Green Valley</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans|PT+Serif&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <!-- bower:css -->
-  <!-- endbower -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css css/main.css -->
+    
+    <link rel="stylesheet" href="css/style.css">  
+   
+  <!-- endbuild -->
 </head>
+
 <body>
-  
-   <header class="page-header">
+
+  <header class="page-header">
     <div class="page-header__inner">
       <a href="/" class="site-logo"><img src="img/main-logo.png" alt=""></a>
-      <div class="menu-toggler"></div>
+      <a href="#" class="page-header__menu-toggler-wrap">
+        <div class="menu-toggler"></div>
+      </a>
       <nav class="main-nav">
 
         <ul class="main-nav__list">
@@ -122,15 +131,21 @@
       </p>
     </div>
   </footer>
+  <!-- build:js js/vendor.js -->
+   <script src="js/jquery.mobile.custom.min.js"></script>  
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js js/main.js -->
   
-  <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <!-- endbower -->
-  <script src="js/jquery.mobile.custom.min.js"></script>
-  
-  <script src="js/promo-slider.js"></script>
-  <script src="js/gallery-slider.js"></script>
-  <script src="js/review.js"></script>
-  <script src="js/actions-slider.js"></script>
+   
+    <script src="js/actions-slider.js"></script>  
+    <script src="js/gallery-slider.js"></script>  
+    
+    <script src="js/promo-slider.js"></script>  
+    <script src="js/review.js"></script>  
+   
+  <!-- endbuild -->
 </body>
 </html>
