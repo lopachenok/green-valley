@@ -60,6 +60,16 @@ html, body {
   @media (min-width: 1200px) and (min-width: 1200px) {
     .page-header__inner {
       width: 1180px; } }
+  .page-header__menu-toggler-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 34px;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
   .page-header__btn-wrap {
     display: none; }
     @media (min-width: 1200px) {
@@ -418,6 +428,11 @@ html, body {
         margin: 36px 0 0;
         padding: 0;
         list-style: none; } }
+    @media (min-width: 1200px) {
+      .service-slider__list {
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
   @media (min-width: 768px) {
     .service-slider__list-item {
       -webkit-flex-basis: 90px;
@@ -430,22 +445,22 @@ html, body {
       padding-top: 95px; } }
   @media (min-width: 768px) {
     .service-slider__list-item:first-child {
-      background: url(../img/swimming_pool.png) no-repeat; } }
+      background: url(../img/swimming_pool.png) no-repeat center top; } }
   @media (min-width: 768px) {
     .service-slider__list-item:nth-child(2) {
-      background: url(../img/galaxy-football-school.png) no-repeat; } }
+      background: url(../img/galaxy-football-school.png) no-repeat center top; } }
   @media (min-width: 768px) {
     .service-slider__list-item:nth-child(3) {
-      background: url(../img/pic.png) no-repeat; } }
+      background: url(../img/pic.png) no-repeat center top; } }
   @media (min-width: 768px) {
     .service-slider__list-item:nth-child(4) {
-      background: url(../img/spa1.png) no-repeat; } }
+      background: url(../img/spa1.png) no-repeat center top; } }
   @media (min-width: 768px) {
     .service-slider__list-item:nth-child(5) {
-      background: url(../img/123.png) no-repeat; } }
+      background: url(../img/123.png) no-repeat center top; } }
   @media (min-width: 768px) {
     .service-slider__list-item:last-child {
-      background: url(../img/animation.png) no-repeat; } }
+      background: url(../img/animation.png) no-repeat center top; } }
 
 .gallery {
   margin: 0 auto;
@@ -595,8 +610,12 @@ html, body {
   25% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
-    z-index: -1; }
+    z-index: 0; }
   26% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    z-index: -1; }
+  27% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     z-index: -1; }
@@ -613,8 +632,12 @@ html, body {
   25% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
-    z-index: -1; }
+    z-index: 0; }
   26% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    z-index: -1; }
+  27% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     z-index: -1; }
@@ -631,7 +654,7 @@ html, body {
   25% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
-    z-index: -1; }
+    z-index: 0; }
   100% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
@@ -645,7 +668,7 @@ html, body {
   25% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
-    z-index: -1; }
+    z-index: 0; }
   100% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
@@ -663,7 +686,13 @@ html, body {
     width: 146px; }
 
 .review-slider {
-  position: relative; }
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box; }
+  @media (min-width: 1200px) {
+    .review-slider {
+      width: 1180px; } }
   .review-slider__inner {
     display: -webkit-box;
     display: -webkit-flex;
@@ -678,7 +707,14 @@ html, body {
       .review-slider__inner {
         width: 998px;
         height: 364px;
-        position: relative; } }
+        position: relative; }
+        .review-slider__inner--show-all {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          height: auto; } }
   .review-slider__item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -718,6 +754,10 @@ html, body {
           display: flex; }
         .review-slider__item--active {
           -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+        .review-slider__item--show-all {
+          position: static;
+          -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); } }
   @media (min-width: 1200px) {
     .review-slider__control {
@@ -732,12 +772,14 @@ html, body {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
-        right: 11%; }
+        right: 0; }
       .review-slider__control--left {
         -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
         transform: rotate(-135deg);
-        left: 11%; } }
+        left: 0; }
+      .review-slider__control--show-all {
+        display: none; } }
 
 .review-card {
   width: 100vw;

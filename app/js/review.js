@@ -1,19 +1,4 @@
-/*$(document).ready(function(){
-  var i = 0;
-  
-  $(document).on('click', '.review-slider__control--left', function(){
-    i = i + 1;
-    console.log(i)
-    $('.review-slider__item').css('transform', 'translate3d('+i*100+'%,0,0)')
-  })
-  
-  $(document).on('click', '.review-slider__control--right', function(){
-    i = i - 1;
-    console.log(i)
-    $('.review-slider__item').css('transform', 'translate3d('+i*100+'%,0,0)')
-  })
 
-})*/
 $(document).ready(function(){
   
   $('.review-slider__control--right').click(function(){
@@ -60,5 +45,9 @@ $(document).ready(function(){
   }
   
   
-  
+  $(document).on('click', '#show-all', function(){
+    $('.review-slider__inner').toggleClass('review-slider__inner--show-all');
+    $('.review-slider__item').toggleClass('review-slider__item--show-all');
+    $('.review-slider__control').toggleClass('review-slider__control--show-all')
+  })
 })

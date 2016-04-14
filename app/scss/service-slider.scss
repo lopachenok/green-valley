@@ -79,7 +79,9 @@
       padding: 0;
       list-style: none;
     }
-    
+    @media(min-width: $large-breakpoint){   
+      flex-wrap: nowrap;
+    }
   }
   
   &__list-item{
@@ -94,32 +96,32 @@
     
     &:first-child{
       @media(min-width: $medium-breakpoint){ 
-        background: url(../img/swimming_pool.png) no-repeat;      
+        background: url(../img/swimming_pool.png) no-repeat center top;      
       }
     }
     &:nth-child(2){
       @media(min-width: $medium-breakpoint){ 
-        background: url(../img/galaxy-football-school.png) no-repeat; 
+        background: url(../img/galaxy-football-school.png) no-repeat center top; 
       }
     }
     &:nth-child(3){
       @media(min-width: $medium-breakpoint){ 
-        background: url(../img/pic.png) no-repeat;
+        background: url(../img/pic.png) no-repeat center top;
       }
     }
     &:nth-child(4){
       @media(min-width: $medium-breakpoint){ 
-        background: url(../img/spa1.png) no-repeat;
+        background: url(../img/spa1.png) no-repeat center top;
       }
     }
     &:nth-child(5){
       @media(min-width: $medium-breakpoint){ 
-        background: url(../img/123.png) no-repeat;
+        background: url(../img/123.png) no-repeat center top;
       }
     }
     &:last-child{
       @media(min-width: $medium-breakpoint){ 
-        background: url(../img/animation.png) no-repeat;
+        background: url(../img/animation.png) no-repeat center top;
       }
     }
   }
