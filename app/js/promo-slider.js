@@ -1,7 +1,5 @@
 $(document).ready(function () {
-  $(document).on('click', '.menu-toggler', function () {
-    $('.main-nav__list').toggleClass('main-nav__list--open');
-  })
+  
 
   $(document).on('click', '.promo-slider__tabs-item a', function (e) {
     e.preventDefault();

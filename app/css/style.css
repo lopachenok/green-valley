@@ -856,6 +856,9 @@ html, body {
 .section-title--white {
   color: #ffffff; }
 
+.section-title--grey {
+  color: #191919; }
+
 .actions__inner {
   margin: 0 auto;
   width: 100%;
@@ -1427,3 +1430,160 @@ html, body {
     @media (min-width: 1200px) {
       .recomendation__item:last-of-type {
         display: inline-block; } }
+
+.booking__inner {
+  padding-top: 70px;
+  padding-bottom: 50px; }
+
+.booking__title {
+  color: #000000;
+  font: 30px "PT Serif";
+  text-align: center;
+  margin: 0; }
+
+.booking__text {
+  color: #000000;
+  font: 400 16px/20px "Fira Sans";
+  margin: 20px auto 0;
+  text-align: center;
+  width: 60%; }
+  @media (min-width: 768px) {
+    .booking__text {
+      width: 381px; } }
+
+.booking__tel {
+  color: #ff7435;
+  text-decoration: none; }
+
+.step {
+  color: #929292;
+  font: 500 14px/18px "Fira Sans";
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0; }
+
+.date-of-rest {
+  background: #f1f1f1; }
+  .date-of-rest__inner {
+    padding-top: 50px;
+    padding-bottom: 10px; }
+  .date-of-rest__choice-block {
+    margin-top: 36px;
+    padding: 0;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      .date-of-rest__choice-block {
+        margin: 20px auto 0;
+        background-color: #fff;
+        width: 380px;
+        padding-top: 25px;
+        position: relative;
+        margin-bottom: 98px;
+        border: 1px solid #ebebeb; }
+        .date-of-rest__choice-block:after {
+          content: '';
+          height: 90px;
+          position: absolute;
+          border-left: 1px solid #ebebeb;
+          top: 27px;
+          left: 50%; } }
+  .date-of-rest__choice-item {
+    font-size: 0;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .date-of-rest__choice-item {
+        display: inline-block;
+        margin: 0 10px; } }
+    @media (min-width: 1200px) {
+      .date-of-rest__choice-item {
+        display: inline-block;
+        margin: 0 24px; } }
+  .date-of-rest__label {
+    color: #4c4c4c;
+    font: 400 14px/18px "Fira Sans";
+    display: block;
+    text-align: center;
+    text-transform: uppercase; }
+  .date-of-rest__input {
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-right: none;
+    text-align: center;
+    color: #0ab89d;
+    font: 500 14px/18px "Fira Sans"; }
+    @media (min-width: 1200px) {
+      .date-of-rest__input {
+        height: 27px;
+        width: 41px;
+        margin-bottom: 50px; } }
+  .date-of-rest__input:last-of-type {
+    width: 70px;
+    border-right: 1px solid #ebebeb; }
+    @media (min-width: 1200px) {
+      .date-of-rest__input:last-of-type {
+        width: 53px; } }
+
+.living-place__inner {
+  padding-top: 40px;
+  padding-bottom: 50px; }
+  @media (min-width: 768px) {
+    .living-place__inner {
+      padding-top: 50px; } }
+
+.living-place__choice-block {
+  margin: 23px auto 0;
+  padding: 0;
+  border: 1px solid #ebebeb;
+  height: 160px;
+  width: 280px;
+  position: relative; }
+  @media (min-width: 768px) {
+    .living-place__choice-block {
+      width: 380px; } }
+  .living-place__choice-block:before {
+    position: absolute;
+    content: '';
+    height: 110px;
+    top: 25px;
+    left: 50%;
+    border-left: 1px solid #ebebeb; }
+
+.living-place__choice-item {
+  width: 138px;
+  display: inline-block;
+  height: 100%; }
+  @media (min-width: 768px) {
+    .living-place__choice-item {
+      width: 188px; } }
+
+.living-place__lable {
+  color: #4c4c4c;
+  font: 400 14px/18px "Fira Sans";
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top: 28px;
+  position: relative;
+  padding-left: 25px; }
+  .living-place__lable:before {
+    content: '';
+    height: 64px;
+    width: 82px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 30px; }
+  .living-place__lable--hotel:before {
+    background: url(../img/IC-Hotel.png) no-repeat center; }
+  .living-place__lable--cottage:before {
+    background: url(../img/IC-Cottage.png) no-repeat center; }
+
+.living-place__icon {
+  opacity: 0; }

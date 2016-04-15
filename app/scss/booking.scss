@@ -1,0 +1,31 @@
+.booking{
+  
+  &__inner{
+    padding-top: 70px;
+    padding-bottom: 50px; 
+  }
+  
+  &__title{
+    color: #000000;
+    font: 30px $font-family-banner;
+    text-align: center;
+    margin: 0;
+  }
+  
+  &__text{
+    color: #000000;
+    font: 400 16px / 20px $font-family;
+    margin: 20px auto 0;
+    text-align: center;
+    width: 60%;
+    
+    @media (min-width: $medium-breakpoint) {
+      width: 381px;
+    }
+  }
+  
+  &__tel{
+    color: $orange-color;
+    text-decoration: none;
+  }
+}

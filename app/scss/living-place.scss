@@ -1,0 +1,76 @@
+.living-place{
+  
+  &__inner{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    
+    @media (min-width: $medium-breakpoint) {
+      padding-top: 50px;
+    }
+  }
+  
+  &__choice-block{
+    margin: 23px auto 0;
+    padding: 0;
+    border: $border;
+    height: 160px;
+    width: 280px;
+    position: relative;
+    
+    @media (min-width: $medium-breakpoint) {
+      width: 380px;
+    }
+    
+    &:before{
+      position: absolute;
+      content: '';
+      height: 110px;
+      top: 25px;
+      left: 50%;
+      border-left: $border;      
+      
+    }
+  }
+  
+  &__choice-item{
+    width: 138px;
+    display: inline-block;
+    height: 100%;
+    
+    @media (min-width: $medium-breakpoint) {
+        width: 188px;
+      }
+  }
+  
+  &__lable{
+    color: #4c4c4c;
+    font: 400 14px / 18px $font-family;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 28px;
+    position: relative;
+    padding-left: 25px;
+    
+    &:before{
+      content: '';
+      height: 64px;
+      width: 82px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 30px;
+    }
+    
+    &--hotel:before{
+      background: url(../img/IC-Hotel.png) no-repeat center;
+    }
+    &--cottage:before{
+      background: url(../img/IC-Cottage.png)no-repeat center; 
+    }
+  }
+  
+  &__icon{
+    opacity: 0;
+  }
+}

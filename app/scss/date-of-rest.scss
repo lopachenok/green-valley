@@ -1,0 +1,86 @@
+.date-of-rest{
+  
+  background: $form-background-color;
+  
+  &__inner{
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  
+  &__choice-block{
+    margin-top: 36px;
+    padding: 0; 
+    text-align: center;
+    
+    @media (min-width: $large-breakpoint) {
+      margin: 20px auto 0;
+      background-color: #fff;
+      width: 380px;
+      padding-top: 25px;
+      position: relative;
+      margin-bottom: 98px;
+      border: $border;
+      
+      &:after{
+        content: '';
+        height: 90px;
+        position: absolute;
+        border-left: 1px solid #ebebeb;
+        top: 27px;
+        left: 50%;
+      }
+    }
+  }
+  
+  &__choice-item{
+    font-size: 0;
+    text-align: center;
+    
+    @media (min-width: $medium-breakpoint) {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    
+    @media (min-width: $large-breakpoint) {
+      display: inline-block;
+      margin: 0 24px;
+    }
+  }
+  
+  &__label{
+    color: #4c4c4c;
+    font: 400 14px / 18px $font-family;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  &__input{
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-right: none;
+    text-align: center;
+    color: #0ab89d;
+    font: 500 14px / 18px $font-family;
+    
+     @media (min-width: $large-breakpoint) {
+       height: 27px;
+       width: 41px;
+       margin-bottom: 50px;       
+    }
+  }
+  
+  &__input:last-of-type{
+    width: 70px;
+    border-right: 1px solid #ebebeb;
+    
+    @media (min-width: $large-breakpoint) {       
+       width: 53px;
+    }
+  }
+}

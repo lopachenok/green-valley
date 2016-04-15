@@ -4,7 +4,7 @@
   margin: 0 auto;
   letter-spacing: $letter-spacing;
   width: 185px;
-  text-align: center;
+  text-align: center;  
   
   @media(min-width: $medium-breakpoint) {
     font-size: 30px;
@@ -14,4 +14,8 @@
 
 .section-title--white{
   color: #ffffff;
+}
+
+.section-title--grey{
+  color: #191919;
 }
