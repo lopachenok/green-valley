@@ -1,0 +1,19 @@
+.personal-info{
+  &__inner{
+    padding-top: 48px;
+    padding-bottom: 45px;
+  }
+  
+  &__form{
+    margin: 12px auto 0;
+    width: 280px;
+    
+     @media (min-width: $medium-breakpoint){
+       width: 725px;
+    }
+    @media (min-width: $large-breakpoint){
+       width: 780px
+    }
+  }
+
+}

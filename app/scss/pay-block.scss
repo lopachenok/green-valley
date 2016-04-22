@@ -1,0 +1,98 @@
+.pay-block{
+  background: #fff;
+  border: $border;
+  padding-left: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 25px;
+  
+  @media (min-width: $medium-breakpoint) {
+   width: 450px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 293px;
+  }
+  
+  &__title{
+    position: relative;
+    color: #4c4c4c;
+    font: 500 14px / 18px $font-family;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 35px;
+    margin: 0;
+    
+    &:before{
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 12px;
+      background: url(../img/IC-Check-copy.png); 
+      left: 0;
+      top: 2px;
+    }
+        
+    &--checked:before{
+      background: url(../img/IC-Check.png);
+    }
+  }
+  
+  &__text{
+    display: none;
+    
+    @media (min-width: $medium-breakpoint) {
+      display: block;
+      color: #4c4c4c;
+      width: 273px;
+      font: 400 14px / 18px $font-family;
+      float: right;
+      margin-top: -20px;
+      margin-right: 40px;
+    }
+  }
+  
+  &__radio{
+    display: none;
+  }
+  
+  &__form{
+    width: 239px;
+    @media (min-width: $medium-breakpoint) {
+      width: 412px;
+    }
+  }
+  
+  &__title-cost{
+    color: #4c4c4c;
+    font: 400 14px / 18px $font-family;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  &__cost{
+    color: #191919;
+    font: 500 24px / 18px $font-family;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  &__info{
+    color: #4c4c4c;
+    font: 400 14px / 19px $font-family;
+    width: 217px;
+    margin: 25px auto 0;
+  }
+}
+
+.pay-block--left{
+  padding-left: 0;
+  order: 1;
+  
+  @media (min-width: $medium-breakpoint) {
+    float: left;
+    width: 278px;
+    height: 306px;
+    margin-left: 0;
+  }
+}
+

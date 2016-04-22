@@ -62,3 +62,13 @@
     width: 181px;
   }  
 }
+
+.btn--submit{
+  border-radius: 0;
+  background-color: #0ab89d;
+  height: 50px;
+}
+
+.btn--submit:hover{
+  background-color: darken(#0ab89d, 15%);
+}

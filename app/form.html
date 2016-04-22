@@ -126,28 +126,28 @@
           <ul class="cottage-type__choice-block">
 
             <li class="cottage-type__choice-item">
-              <label>
+              <label class="cottage-type__choice-label  cottage-type__choice-label--checked">
                 флагман
                 <input type="radio" name="cottage-type">
               </label>
             </li>
 
             <li class="cottage-type__choice-item">
-              <label>
+              <label class="cottage-type__choice-label">
                 озерный
                 <input type="radio" name="cottage-type">
               </label>
             </li>
 
             <li class="cottage-type__choice-item">
-              <label>
+              <label class="cottage-type__choice-label">
                 ольховка
                 <input type="radio" name="cottage-type">
               </label>
             </li>
 
             <li class="cottage-type__choice-item">
-              <label>
+              <label class="cottage-type__choice-label">
                 портовый
                 <input type="radio" name="cottage-type">
               </label>
@@ -156,30 +156,6 @@
           </ul>
           
           <div class="cottage-type__feature-block">
-            <ul class="cottage-type__feature-list">
-              <li class="cottage-type__feature-item">площадь 100М</li>
-              <li class="cottage-type__feature-item">3 комнаты</li>
-              <li class="cottage-type__feature-item">5 спальных мест</li>
-              <li class="cottage-type__feature-item">раздельный санузел</li>
-              <li class="cottage-type__feature-item">wi-fi</li>
-            </ul>
-            
-            <ul class="cottage-type__feature-list">
-              <li class="cottage-type__feature-item">площадь 100М</li>
-              <li class="cottage-type__feature-item">3 комнаты</li>
-              <li class="cottage-type__feature-item">5 спальных мест</li>
-              <li class="cottage-type__feature-item">раздельный санузел</li>
-              <li class="cottage-type__feature-item">wi-fi</li>
-            </ul>
-            
-            <ul class="cottage-type__feature-list">
-              <li class="cottage-type__feature-item">площадь 100М</li>
-              <li class="cottage-type__feature-item">3 комнаты</li>
-              <li class="cottage-type__feature-item">5 спальных мест</li>
-              <li class="cottage-type__feature-item">раздельный санузел</li>
-              <li class="cottage-type__feature-item">wi-fi</li>
-            </ul>
-            
             <ul class="cottage-type__feature-list">
               <li class="cottage-type__feature-item">площадь 100М</li>
               <li class="cottage-type__feature-item">3 комнаты</li>
@@ -201,25 +177,22 @@
 
           <div class="personal-info__form">
 
-            <div class="input-wrap">
-              <input type="text" placeholder="Имя">
-              <span class="input-wrap__icon  input-wrap__icon--success"></span>
+            <div class="input-wrap  input-wrap--high  input-wrap--success">
+              <input type="text" placeholder="Имя" value="Владимир">
             </div>
 
-            <div class="input-wrap">
+            <div class="input-wrap  input-wrap--high">
               <input type="text" placeholder="Фамилия">
               <span class="personal-info__icon"></span>
             </div>
 
-            <div class="input-wrap">
+            <div class="input-wrap  input-wrap--high">
               <input type="text" placeholder="Номер телефона">
-              <span class="input-wrap__icon"></span>
               <p class="input-wrap__info-text">Мы свяжемся с вами в случае необходимости.</p>
             </div>
 
-            <div class="input-wrap">
-              <input type="text" placeholder="e-mail">
-              <span class="input-wrap__icon"></span>
+            <div class="input-wrap  input-wrap--high">
+              <input type="text" placeholder="e-mail">        
               <p class="input-wrap__info-text">На этот адрес мы вышлем вам подтверждание о забронированном номере.</p>
             </div>
 
@@ -234,29 +207,28 @@
           <h1 class="section-title  section-title--grey">Способ оплаты</h1>
 
           <div class="pay__form">
-
-            <div class="total-cost">
-              <h3 class="total-cost__title">к оплате</h3>
-              <p class="total-cost__cost">-</p>
-              <p class="total-cost__info">Пожалуйста, выберите дату въезда и выезда, чтобы увидеть сумму к оплате</p>
+<div class="pay-block  pay-block--left">
+              <h3 class="pay-block__title-cost">к оплате</h3>
+              <p class="pay-block__cost">-</p>
+              <p class="pay-block__info">Пожалуйста, выберите дату въезда и выезда, чтобы увидеть сумму к оплате</p>
             </div>
-
-            <div class="pay-arrival">
+            
+            <div class="pay-block">
               <label>                
-                <p class="pay-arrival__title">по приезду</p>
-                <p class="pay-arrival__text">Вы можете произвести лплату по факту заселения.</p>
-                <input type="radio" name="pay">
+                <p class="pay-block__title">по приезду</p>
+                <p class="pay-block__text">Вы можете произвести лплату по факту заселения.</p>
+                <input type="radio" name="pay" class="pay-block__radio">
               </label>
             </div>
 
-            <div class="pay-now">
+            <div class="pay-block">
               <label>                
-                <p class="pay-now__title">сейчас</p>
-                <p class="pay-now__text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
-                <input type="radio" name="pay">
+                <p class="pay-block__title  pay-block__title--checked">сейчас</p>
+                <p class="pay-block__text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+                <input type="radio" name="pay" class="pay-block__radio">
               </label>
 
-              <div class="pay-now__form">
+              <div class="pay-block__form">
 
                 <div class="input-wrap">
                   <label>
@@ -265,7 +237,7 @@
                   </label>
                 </div>
 
-                <div class="input-wrap">
+                <div class="input-wrap  input-wrap--small">
                   <label>
                     код cvc
                     <input type="number" placeholder="123">
@@ -279,7 +251,7 @@
                   </label>
                 </div>
 
-                <div class="input-wrap">
+                <div class="input-wrap  input-wrap--small">
                   <label>
                     действует до
                     <input type="text" placeholder="01 / 2018">
@@ -289,7 +261,10 @@
               </div>
             </div>
 
-            <button class="btn btn--submit">Забронировать</button>
+<div class="pay__btn-wrap">
+  <button class="btn btn--submit">Забронировать</button>
+</div>
+            
           </div>
         </div>
       </section>
@@ -315,10 +290,11 @@
     </div>
   </footer>
   <!-- build:js js/vendor.js -->
-   <script src="js/jquery.mobile.custom.min.js"></script>  
+   
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
+    <script src="js/jquery.mobile.custom.min.js"></script>  
   <!-- endbuild -->
   <!-- build:js js/main.js -->
   

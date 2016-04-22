@@ -1,0 +1,53 @@
+.input-wrap{
+  margin-top: 20px;
+  width: 100%;
+  
+  @media (min-width: $medium-breakpoint){
+    display: inline-block;
+    width: calc((100% - 20px)/2);
+    vertical-align: top;
+    
+    &:nth-of-type(odd){
+      margin-right: 16px;
+    }
+  }
+  
+  label{
+    color: #4c4c4c;
+    font: 400 14px / 18px $font-family;
+    text-transform: uppercase;
+  }
+  
+  input{
+    margin-top: 10px;
+    display: block;
+    border: $border;
+    text-transform: uppercase;
+    color: #979696;
+    font: 400 14px / 18px $font-family;
+    height: 40px;
+    text-align: center;
+    padding-left: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  &__info-text{
+    color: #4c4c4c;
+    font: 400 14px / 18px $font-family;
+  }
+}
+.input-wrap--high{
+  
+  input{
+    height: 50px;
+  }
+}
+
+.input-wrap--small{
+  width: 135px;
+}
+.input-wrap--success input{
+  background: url(../img/IC-Check.png) no-repeat 15px;
+  color: #191919;
+}

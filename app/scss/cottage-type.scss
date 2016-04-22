@@ -1,0 +1,163 @@
+.cottage-type{
+  background: $form-background-color;
+  
+  &__inner{
+    padding-top: 47px;
+    padding-bottom: 50px;
+  }
+  
+  &__choice-block{
+    margin-top: 30px;
+    padding: 10px 0 45px;
+    background: #fff;
+    border: $border;
+    
+    @media (min-width: $medium-breakpoint) {      
+      width: 768px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  &__choice-item{
+    margin-top: 35px;
+    text-align: center;
+    color: #979696;
+    font: 500 14px / 18px $font-family;
+    text-transform: uppercase; 
+    
+    @media (min-width: $medium-breakpoint) {
+      display: inline-block;
+      width: 189px;
+      position: relative;
+      margin: 0;
+      padding: 63px 0;
+      
+      &:after{
+        content: '';
+        position: absolute;
+        border-right: $border;
+        height: 90px;
+        right: 0;
+        top: 32px;
+      }
+      
+      &:last-of-type:after{
+        display: none;
+      }
+    }
+  }
+  
+  &__choice-label{
+    
+    input{
+      opacity: 0;
+    }
+    
+    &--checked{
+      position: relative;
+      color: #191919;
+    }
+    
+    &--checked:before{
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 12px;  
+      background: url(../img/IC-Check.png);
+      left: -25px;
+      top: -2px;
+      
+       @media (min-width: $medium-breakpoint) {
+         top: 27px;
+         left: 29%;
+       }
+    }
+  }
+  
+  &__feature-block{
+    display: none;
+    
+    @media (min-width: $medium-breakpoint) {
+      display: block;
+      margin: 20px auto;
+      width: 768px;
+      height: 139px;
+      background: #fff;
+      border: $border;      
+      
+    }
+  }
+  
+  &__feature-list{
+    @media (min-width: $medium-breakpoint) {
+      padding: 0 70px;
+      margin: 0;
+      position: relative;
+      
+      &:before{
+        content: '';
+        position: absolute;
+        border: 7px solid transparent;
+        border-bottom: 13px solid #fff;
+        top: -20px;
+        left: 80px;
+      }
+    }
+  }
+  
+  &__feature-item{
+    @media (min-width: $medium-breakpoint) {
+      width: 83px;
+      display: inline-block;
+      margin-right: 45px;
+      text-align: center;
+      color: #191919;
+      font: 500 14px / 18px $font-family;
+      text-transform: uppercase;
+      position: relative;
+      height: 100%;
+      padding-top: 80px;
+      vertical-align: top;
+      
+      &:last-of-type{
+        margin-right: 0;
+      }
+      
+      &:before{
+        content: '';
+        position: absolute;
+        display: block;
+        height: 43px;
+        top: 24px;
+        left: 11px;
+        width: 55px;
+      }
+      
+      &:first-of-type:before{
+        
+        background: url(../img/Squad_rule_128.png) no-repeat center; 
+      }
+      
+      &:nth-of-type(2):before{
+       
+        background: url(../img/Elevator_Door_128.png) no-repeat center; 
+      }
+      
+      &:nth-of-type(3):before{
+        
+        background: url(../img/King_Size_Bed_128.png)  no-repeat center; 
+      }
+      
+      &:nth-of-type(4):before{
+       
+        background: url(../img/Hotel_Bathtub__128.png) no-repeat center;  
+      }
+      
+      &:last-of-type:before{
+        background: url(../img/Wifi_Modem_128.png) no-repeat center; 
+      }
+    }
+  }
+}

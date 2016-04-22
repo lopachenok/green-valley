@@ -241,6 +241,14 @@ html, body {
     display: inline-block;
     width: 181px; } }
 
+.btn--submit {
+  border-radius: 0;
+  background-color: #0ab89d;
+  height: 50px; }
+
+.btn--submit:hover {
+  background-color: #066f5f; }
+
 .promo-slider {
   overflow: hidden; }
   .promo-slider__tabs {
@@ -1587,3 +1595,282 @@ html, body {
 
 .living-place__icon {
   opacity: 0; }
+
+.cottage-type {
+  background: #f1f1f1; }
+  .cottage-type__inner {
+    padding-top: 47px;
+    padding-bottom: 50px; }
+  .cottage-type__choice-block {
+    margin-top: 30px;
+    padding: 10px 0 45px;
+    background: #fff;
+    border: 1px solid #ebebeb; }
+    @media (min-width: 768px) {
+      .cottage-type__choice-block {
+        width: 768px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto; } }
+  .cottage-type__choice-item {
+    margin-top: 35px;
+    text-align: center;
+    color: #979696;
+    font: 500 14px/18px "Fira Sans";
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .cottage-type__choice-item {
+        display: inline-block;
+        width: 189px;
+        position: relative;
+        margin: 0;
+        padding: 63px 0; }
+        .cottage-type__choice-item:after {
+          content: '';
+          position: absolute;
+          border-right: 1px solid #ebebeb;
+          height: 90px;
+          right: 0;
+          top: 32px; }
+        .cottage-type__choice-item:last-of-type:after {
+          display: none; } }
+  .cottage-type__choice-label input {
+    opacity: 0; }
+  .cottage-type__choice-label--checked {
+    position: relative;
+    color: #191919; }
+  .cottage-type__choice-label--checked:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 12px;
+    background: url(../img/IC-Check.png);
+    left: -25px;
+    top: -2px; }
+    @media (min-width: 768px) {
+      .cottage-type__choice-label--checked:before {
+        top: 27px;
+        left: 29%; } }
+  .cottage-type__feature-block {
+    display: none; }
+    @media (min-width: 768px) {
+      .cottage-type__feature-block {
+        display: block;
+        margin: 20px auto;
+        width: 768px;
+        height: 139px;
+        background: #fff;
+        border: 1px solid #ebebeb; } }
+  @media (min-width: 768px) {
+    .cottage-type__feature-list {
+      padding: 0 70px;
+      margin: 0;
+      position: relative; }
+      .cottage-type__feature-list:before {
+        content: '';
+        position: absolute;
+        border: 7px solid transparent;
+        border-bottom: 13px solid #fff;
+        top: -20px;
+        left: 80px; } }
+  @media (min-width: 768px) {
+    .cottage-type__feature-item {
+      width: 83px;
+      display: inline-block;
+      margin-right: 45px;
+      text-align: center;
+      color: #191919;
+      font: 500 14px/18px "Fira Sans";
+      text-transform: uppercase;
+      position: relative;
+      height: 100%;
+      padding-top: 80px;
+      vertical-align: top; }
+      .cottage-type__feature-item:last-of-type {
+        margin-right: 0; }
+      .cottage-type__feature-item:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 43px;
+        top: 24px;
+        left: 11px;
+        width: 55px; }
+      .cottage-type__feature-item:first-of-type:before {
+        background: url(../img/Squad_rule_128.png) no-repeat center; }
+      .cottage-type__feature-item:nth-of-type(2):before {
+        background: url(../img/Elevator_Door_128.png) no-repeat center; }
+      .cottage-type__feature-item:nth-of-type(3):before {
+        background: url(../img/King_Size_Bed_128.png) no-repeat center; }
+      .cottage-type__feature-item:nth-of-type(4):before {
+        background: url(../img/Hotel_Bathtub__128.png) no-repeat center; }
+      .cottage-type__feature-item:last-of-type:before {
+        background: url(../img/Wifi_Modem_128.png) no-repeat center; } }
+
+.personal-info__inner {
+  padding-top: 48px;
+  padding-bottom: 45px; }
+
+.personal-info__form {
+  margin: 12px auto 0;
+  width: 280px; }
+  @media (min-width: 768px) {
+    .personal-info__form {
+      width: 725px; } }
+  @media (min-width: 1200px) {
+    .personal-info__form {
+      width: 780px; } }
+
+.input-wrap {
+  margin-top: 20px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .input-wrap {
+      display: inline-block;
+      width: -webkit-calc((100% - 20px)/2);
+      width: calc((100% - 20px)/2);
+      vertical-align: top; }
+      .input-wrap:nth-of-type(odd) {
+        margin-right: 16px; } }
+  .input-wrap label {
+    color: #4c4c4c;
+    font: 400 14px/18px "Fira Sans";
+    text-transform: uppercase; }
+  .input-wrap input {
+    margin-top: 10px;
+    display: block;
+    border: 1px solid #ebebeb;
+    text-transform: uppercase;
+    color: #979696;
+    font: 400 14px/18px "Fira Sans";
+    height: 40px;
+    text-align: center;
+    padding-left: 15px;
+    width: 100%;
+    box-sizing: border-box; }
+  .input-wrap__info-text {
+    color: #4c4c4c;
+    font: 400 14px/18px "Fira Sans"; }
+
+.input-wrap--high input {
+  height: 50px; }
+
+.input-wrap--small {
+  width: 135px; }
+
+.input-wrap--success input {
+  background: url(../img/IC-Check.png) no-repeat 15px;
+  color: #191919; }
+
+.pay {
+  background: #f1f1f1; }
+  .pay__inner {
+    padding-top: 45px;
+    padding-bottom: 80px; }
+    @media (min-width: 1200px) {
+      .pay__inner {
+        width: 780px;
+        margin-left: auto;
+        margin-right: auto; } }
+  .pay__btn-wrap {
+    margin: 50px auto 0;
+    width: 280px;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2; }
+    @media (min-width: 768px) {
+      .pay__btn-wrap {
+        width: 100%; } }
+  .pay__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .pay__form {
+        display: block;
+        padding-top: 35px; } }
+
+.pay-block {
+  background: #fff;
+  border: 1px solid #ebebeb;
+  padding-left: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 25px; }
+  @media (min-width: 768px) {
+    .pay-block {
+      width: 450px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-left: 293px; } }
+  .pay-block__title {
+    position: relative;
+    color: #4c4c4c;
+    font: 500 14px/18px "Fira Sans";
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 35px;
+    margin: 0; }
+    .pay-block__title:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 12px;
+      background: url(../img/IC-Check-copy.png);
+      left: 0;
+      top: 2px; }
+    .pay-block__title--checked:before {
+      background: url(../img/IC-Check.png); }
+  .pay-block__text {
+    display: none; }
+    @media (min-width: 768px) {
+      .pay-block__text {
+        display: block;
+        color: #4c4c4c;
+        width: 273px;
+        font: 400 14px/18px "Fira Sans";
+        float: right;
+        margin-top: -20px;
+        margin-right: 40px; } }
+  .pay-block__radio {
+    display: none; }
+  .pay-block__form {
+    width: 239px; }
+    @media (min-width: 768px) {
+      .pay-block__form {
+        width: 412px; } }
+  .pay-block__title-cost {
+    color: #4c4c4c;
+    font: 400 14px/18px "Fira Sans";
+    text-transform: uppercase;
+    text-align: center; }
+  .pay-block__cost {
+    color: #191919;
+    font: 500 24px/18px "Fira Sans";
+    text-transform: uppercase;
+    text-align: center; }
+  .pay-block__info {
+    color: #4c4c4c;
+    font: 400 14px/19px "Fira Sans";
+    width: 217px;
+    margin: 25px auto 0; }
+
+.pay-block--left {
+  padding-left: 0;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1; }
+  @media (min-width: 768px) {
+    .pay-block--left {
+      float: left;
+      width: 278px;
+      height: 306px;
+      margin-left: 0; } }
